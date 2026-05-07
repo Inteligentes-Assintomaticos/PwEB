@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            height: 100%;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Cabeçalho da página */
+        .header {
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        /* Container da tabela - OCUPA SÓ O ESPAÇO DISPONÍVEL */
+        .tabela-container {
+            flex: 1;           /* Ocupa espaço disponível */
+            display: flex;
+            flex-direction: column;
+            min-height: 0;     /* Permite encolher se necessário */
+            padding: 20px;
+        }
+        
+        /* TABELA - altura limitada ao espaço disponível */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            display: flex;
+            flex-direction: column;
+            flex: 1;           /* Ocupa só o espaço do container */
+            min-height: 0;     /* Não força altura extra */
+        }
+        
+        thead {
+            display: block;
+            background-color: #f2f2f2;
+        }
+        
+        tbody {
+            display: block;
+            flex: 1;
+            overflow-y: auto;  /* Scroll APENAS se precisar */
+            min-height: 0;
+        }
+        
+        tfoot {
+            display: block;
+            background-color: #333;
+            color: white;
+        }
+        
+        tr {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        
+        /* A penúltima linha NÃO desce além do necessário */
+        tbody tr:last-child {
+            background-color: #fff3cd;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Minha Tabela</h1>
+        <p>A tabela ocupa APENAS o espaço disponível na tela</p>
+    </div>
+    
+    <div class="tabela-container">
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 30%">Nome</th>
+                    <th style="width: 70%">Informação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>João</td
+                    <td>Desenvolvedor</td
+                </tr>
+                <tr>
+                    <td>Maria</td
+                    <td>Designer</td
+                </tr>
+                <tr>
+                    <td>Carlos</td
+                    <td>Gerente</td
+                </tr>
+                <!-- Penúltima linha - fica no tamanho normal -->
+                <tr style="background-color: #ffffcc;">
+                    <td colspan="2">
+                        ⚠️ Esta linha NÃO desce além do necessário
+                     </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        Rodapé da tabela
+                     </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
