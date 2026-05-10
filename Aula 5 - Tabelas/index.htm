@@ -1,40 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 5 - Tabelas</title>
+    <link rel="shortcut icon" href="./img/foto-curriculo.png" type="image/x-icon">
+
+    <title>Felipe Gabriel - Currículo</title>
 </head>
 
 <style>
 
     body, html {
-        height: 95%;
-        margin: 0;
+        height: 95%;    /* Altura da página */
+        margin: 0;      /* Margens da página */
 
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   /* Fonte do texto */
     }
 
 
     table {
         
-        margin: auto;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 30px;
-        margin-bottom: 0px;
+        margin: auto;       /* Ajuste automático das margens ➡ pra centralizar */
+        margin-top: 30px;   /* Margem superior ➡ pra dar um espaço*/
+        margin-bottom: 0px; /* Margem inferiro ➡ pra remover a margem inferior */
 
         height: 95vh;   /* vh = definir altura de acordo com o tamanho da tela */
 
-        border-right: 1.5px solid black;
+        border-right: 1.5px solid black;    /* borda direita da tabela */
 
     }
 
     
 
     tr {
-        text-align: center;
-        vertical-align: middle;
+        text-align: center;         /* Alinhar o texto horizontalmente no meio */
+        vertical-align: middle;     /* Alinhar o texto verticamentel no meio */
     }
     
 
@@ -48,14 +48,48 @@
         <!-- Menu lateral -->
         <tr style="background-color: #0000CD; color: white;">
 
-            <td rowspan="11" width="10%" style="min-width: 100px;"></td>
+            <td rowspan="11" width="10%" style="min-width: 100px;   /* Largura mínima do menu ➡ para evitar ficar muito pequeno em telas menores (por mais que ainda tenha muito no que ajustar)*/
+
+            font-size: 18pt;    /* Tamanho da fonte */
+            vertical-align: middle;">
+
+                <a href="http://127.0.0.1:3000/Aula%205%20-%20Tabelas/tema_livre.htm?vscode-livepreview=true" target="_self" style="color: #ffffff; text-decoration: none;">
+                    A <br>
+                    C <br>
+                    E <br>
+                    S <br>
+                    S <br>
+                    E <br>
+
+                    <br>
+
+                    P <br>
+                    L <br>
+                    A <br>
+                    Y <br>
+                    E <br>
+                    R <br>
+
+                    <br>
+
+                    T <br>
+                    A <br>
+                    U <br>
+                    Z <br>
+
+                    
+            </td>
 
         </tr>
 
 
 
         <!-- TÍTULO -->
-        <tr style="height: 100px; font-size: 20pt; background-color: blue; color: white;">
+        <tr style="height: 100px;   /* altura */
+        font-size: 20pt;
+        background-color: blue; /* cor do fundo */
+        color: white;   /* cor do texto */
+        ">
 
             <th colspan="4">FELIPE GABRIL ARAÚJO DE FREITAS</th>
 
@@ -70,21 +104,21 @@
         <!-- Informações Iniciais -->
         <tr style="height: 0;">
 
-            <td width="20%" style="padding-top: 20px;">
+            <td width="20%" style="padding-top: 20px;   /* espaço interno 
+            ">
 
                 <img 
-                src="./img/foto-curriculo.jpeg" 
+                src="./img/foto-curriculo.png" 
                 alt="foto do currículo" 
                 title="foto currículo"
-                width="80%"
-                height="auto"
-                style="border-radius: 250px;">
+                width="90%"
+                height="auto">
                 
             </td>
 
             <td colspan="2" style="
             font-size: 15pt;
-            text-align: justify;
+            text-align: justify;    /* justificar o texto */
             padding: 15px;
             width: 97%;
             margin: auto;">
@@ -101,7 +135,7 @@
 
         <!-- Espaço entre as informações -->
         <tr>
-            <td colspan="3" style="height: 30px; background: transparent;"></td>
+            <td colspan="3" style="height: 30px;"></td>
         </tr>
 
 

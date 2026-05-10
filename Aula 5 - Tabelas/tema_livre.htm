@@ -1,45 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 5 - Tabelas</title>
+    <link rel="shortcut icon" href="./img/tauz.png" type="image/x-icon">
+    
+    <title>Player Tauz - Tema Livre</title>
 </head>
 
 <style>
 
     body, html {
-        height: 95%;
-        margin: 0;
-        padding: 0;
+        height: 95%;    /* Altura da página */
+        margin: 0;      /* Margens da página */
 
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   /* Fonte do texto */
+
     }
 
 
     table {
         
-        margin: auto;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 30px;
-        margin-bottom: 0px;
+        margin: auto;       /* Ajuste automático das margens ➡ pra centralizar */
+        margin-top: 30px;   /* Margem superior ➡ pra dar um espaço*/
+        margin-bottom: 0px; /* Margem inferiro ➡ pra remover a margem inferior */
 
         height: 95vh;   /* vh = definir altura de acordo com o tamanho da tela */
 
+        border-right: 1.5px solid black;    /* borda direita da tabela */
+
+
     }
 
-
     
-    h2 {
-        font-size: 15pt;
-    }
-    
-    p {
-        font-size: 15pt;
-        text-align: justify;
-        padding: 15px;
 
+    tr {
+        text-align: center;         /* Alinhar o texto horizontalmente no meio */
+        vertical-align: middle;     /* Alinhar o texto verticamentel no meio */
     }
     
 
@@ -47,116 +44,195 @@
 
 <body>
     
-    <table width="75%" border="1" style="border-collapse: collapse;">
+    <table width="75%" border="0" style="border-collapse: collapse;">
         
-        <!-- TÍTULO -->
-        <tr style="height: 100px; font-size: 20pt;">
+        
+        <!-- Menu lateral -->
+        <tr style="background-color: #2e2e2e; color: white;">
 
-            <th colspan="2">Player Tauz: O Revolucionário dos anos 2000</th>
+            <td rowspan="11" width="10%" style="min-width: 100px; /* Largura mínima do menu ➡ para evitar ficar muito pequeno em telas menores (por mais que ainda tenha muito no que ajustar)*/
+
+             font-size: 25pt; /* Tamanho da fonte */
+             vertical-align: middle;">
+
+                <a href="http://127.0.0.1:3000/Aula%205%20-%20Tabelas/index.htm?vscode-livepreview=true" target="_self" style="color: #ffffff; text-decoration: none;">
+                    A <br>
+                    C <br>
+                    E <br>
+                    S <br>
+                    S <br>
+                    E <br>
+
+                    <br>
+                    O <br>
+                    <br>
+                    
+                    C <br>
+                    U <br>
+                    R <br>
+                    R <br>
+                    Í <br>
+                    C <br>
+                    U <br>
+                    L <br>
+                    O <br>
+                </a>
+
+            </td>
+        </tr>
+
+
+
+        <!-- TÍTULO -->
+        <tr style="height: 100px;   /* altura */
+        font-size: 20pt;
+        background-color: #1a1a1a; /* cor do fundo */
+         color: white; /* cor do texto */
+         ">
+
+            <th colspan="4">Player Tauz: O Revolucionário dos anos 2000</th>
 
         </tr>
 
-        <!-- CONTEÚDO -->
-        <tr style="vertical-align: top; align-items: center;">
 
-            <td width="10%"></td>   <!-- espaço vazio -->
-
-            <td style="align-items: center;">
-                <img src="tauz.webp" alt="Foto do Player Tauz" width="60%" height="auto" style="border-radius: 5px; margin-top: 20px;">
+        
 
 
-                <p>
-                    
-                    O Player Tauz é um dos principais nomes do rap geek no Brasil, conhecido por transformar universos de jogos, animes e filmes em músicas cheias de narrativa e emoção. Ele começou sua trajetória no YouTube por volta de 2013, em uma época em que o conteúdo voltado para cultura nerd ainda estava crescendo no país. Com o tempo, Tauz conquistou um público fiel ao unir batidas modernas com letras que exploram sentimentos, conflitos e histórias de personagens famosos.
-                    
-                    Grande parte do seu sucesso também está ligada a parcerias com o grupo 7 Minutoz, que ajudou a consolidar o rap geek como um gênero relevante no Brasil. Juntos, eles criaram músicas que viralizaram e marcaram uma geração de fãs de games e cultura pop. O diferencial de Tauz sempre foi sua capacidade de ir além de batalhas e ação, trazendo reflexões mais profundas dentro de universos fictícios.
-                    
-                </p>
 
-                <h2><i>Rap do Minecraft</i></h2>
+        
+        <!-- Informações Iniciais -->
+        <tr style="height: 0;">
 
-                <p>
-                Entre seus trabalhos mais conhecidos está o rap inspirado no jogo Minecraft. Nessa música, ele transforma elementos simples do jogo, como minerar, construir e sobreviver, em histórias envolventes. O mundo aberto e criativo de Minecraft permite que ele explore temas como evolução, persistência e superação, criando uma conexão forte com o público que já vivenciou essas experiências no jogo.
-                    
-                O chamado Rap do Minecraft se destaca por combinar referências diretas ao gameplay com metáforas sobre a vida real. Ao falar sobre enfrentar monstros, construir abrigos e explorar o desconhecido, Tauz cria paralelos com desafios pessoais e crescimento individual. Isso faz com que suas músicas não sejam apenas sobre o jogo, mas também sobre a jornada de cada pessoa, o que ajuda a explicar o grande sucesso desse tipo de conteúdo.
-                </p>
+            <td width="20%" style="padding-top: 20px; /* espaço interno (apenas o de cima) */
+            ">
 
-
-                <h3><i>Letra: Rap do Minecraft</i> </h3>
-
-
-                <p>  
-                Bem-vindo ao Minecraft, meu amigo
-                Na jornada desse game, ficará surpreendido
-                Sinta liberdade para poder criar
-                Apenas qualquer coisa que poder imaginar
-                Modo criativo ou sobrevivência
-                Em uma aventura, tenha sua experiência
-                Nem preciso dizer o que se pode ou não fazer
-                Faça o que quiser e verá acontecer
-                Construindo e minerando sem nenhuma trajetória
-                Sem ao menos perceber, vou fazendo minha história
-                Neste universo realmente impressionante
-                Explorando cavernas a procura de diamantes
-                Combinando itens, construindo casas
-                De dia ou de noite, fazendo minha jornada
-                Modificações aumentam a diversidade
-                E fica ainda mais legal com os amigos de verdade <br> <br>
-
-                Yeah, Minecraft, é
-                Você conhece!
-                Num mundo de blocos, faço qualquer criação
-                Onde o único limite é a imaginação
-                (Yeah!)
-                Minecraft, é
-                Você conhece!
-                Num mundo de blocos, faço qualquer criação
-                Onde o único limite é a imaginação
-                Yeah <br> <br>
-
-                Quando cai a noite, é preciso ter cuidado
-                Pode aparecer mobs por todo lado
-                Esqueleto, Zumbi, Aranha ou Creeper
-                Tenha coragem para invocar o Wither
-                Não olhe nos olhos de um Enderman
-                Assim como o Slender, te persegue também
-                Mas o que mais assusta é a lenda desse game
-                Herobrine, esse aí é diferente
-                Sua existência é um grande mistério
-                Tudo que se fala pode ou não estar correto
-                Realmente Minecraft é incomparável
-                Nunca nada semelhante tinha sido criado
-                Recorde de vendas, grande inspiração
-                Alcançando os da antiga e da nova geração
-                Vai falar de gráfico? Mano, dá um tempo
-                Ninguém nunca reclamou de jogar Super Nintendo! <br> <br>
-
-                Yeah, Minecraft, é
-                Você conhece
-                Num mundo de blocos, faço qualquer criação
-                Onde o único limite é a imaginação
-                (Yeah!)
-                Minecraft, é
-                Você conhece!
-                Num mundo de blocos, faço qualquer criação
-                Onde o único limite é a imaginação
-                </p>
-
-                <h2><i>Canal do Artista</i></h2>
-
-                <p>
-                Canal do Youtube: &nbsp; <a href="https://youtube.com/@tauz?si=X5eyVtry8AYIEroQ" title="Canal do Player Tauz" target="_blank">https://youtube.com/@tauz?si=X5eyVtry8AYIEroQ</a>
-
-                </p>
-                            
+                <img 
+                src="./img/tauz.png" 
+                alt="foto do player tauz" 
+                title="foto player tauz"
+                width="90%"
+                height="auto">
+                
             </td>
 
+            <td colspan="2" style="
+            font-size: 15pt;
+            text-align: justify;    /* justificar o texto */
+            padding: 15px;
+            width: 97%;
+            margin: auto;
+            padding-top: 50px;">
+
+                    O Player Tauz é um dos principais nomes do rap geek no Brasil, conhecido por transformar universos de jogos, animes e filmes em músicas cheias de narrativa e emoção. Ele começou sua trajetória no <strong>YouTube</strong> por volta de 2013, em uma época em que o conteúdo voltado para cultura nerd ainda estava crescendo no país. Com o tempo, Tauz conquistou um público fiel ao unir batidas modernas com letras que exploram sentimentos, conflitos e histórias de personagens famosos.
+                    
+                    Grande parte do seu sucesso também está ligada a parcerias com o grupo <strong>7 Minutoz</strong>, que ajudou a consolidar o <q>rap geek</q> como um gênero relevante no Brasil. Juntos, eles criaram músicas que viralizaram e marcaram uma geração de fãs de games e cultura pop. O diferencial de Tauz sempre foi sua capacidade de ir além de batalhas e ação, trazendo reflexões mais profundas dentro de universos fictícios. A seguir uma de suas obras mais conhecidas, <q>Rap do Minecraft</q>.
+                
+            </td>
+            
         </tr>
 
-        <!-- RODAPÉ -->
-         <tr id="rodape" style="height: 50px; font-size: 20pt;">
 
-            <th colspan="2">rodapé</th>
+
+
+
+        <!-- Espaço entre as informações -->
+        <tr>
+            <td colspan="3" style="height: 30px;"></td>
+        </tr>
+
+
+
+
+        <!-- === TABELA === -->
+
+        <!-- Título -->
+        <tr style="background-color:  #1a1a1a; color: #ffffff; height: 40px; font-size: 20pt;">
+
+            
+            <th colspan="3">Rap Minecraft</th>
+            
+        </tr>
+
+        <!-- Desenvolvimento Front-End -->
+        <tr>
+
+
+
+            <td colspan="3">
+
+                <p style="width: 80%; margin: auto; text-align: justify; padding-top: 20px; padding-bottom: 20px; font-size: 15pt;">
+                    Bem-vindo ao Minecraft, meu amigo
+                    Na jornada desse game, ficará surpreendido
+                    Sinta liberdade para poder criar
+                    Apenas qualquer coisa que poder imaginar
+                    Modo criativo ou sobrevivência
+                    Em uma aventura, tenha sua experiência
+                    Nem preciso dizer o que se pode ou não fazer
+                    Faça o que quiser e verá acontecer
+                    Construindo e minerando sem nenhuma trajetória
+                    Sem ao menos perceber, vou fazendo minha história
+                    Neste universo realmente impressionante
+                    Explorando cavernas a procura de diamantes
+                    Combinando itens, construindo casas
+                    De dia ou de noite, fazendo minha jornada
+                    Modificações aumentam a diversidade
+                    E fica ainda mais legal com os amigos de verdade <br> <br>
+
+                    Yeah, Minecraft, é
+                    Você conhece!
+                    Num mundo de blocos, faço qualquer criação
+                    Onde o único limite é a imaginação
+                    (Yeah!)
+                    Minecraft, é
+                    Você conhece!
+                    Num mundo de blocos, faço qualquer criação
+                    Onde o único limite é a imaginação
+                    Yeah <br> <br>
+
+                    Quando cai a noite, é preciso ter cuidado
+                    Pode aparecer mobs por todo lado
+                    Esqueleto, Zumbi, Aranha ou Creeper
+                    Tenha coragem para invocar o Wither
+                    Não olhe nos olhos de um Enderman
+                    Assim como o Slender, te persegue também
+                    Mas o que mais assusta é a lenda desse game
+                    Herobrine, esse aí é diferente
+                    Sua existência é um grande mistério
+                    Tudo que se fala pode ou não estar correto
+                    Realmente Minecraft é incomparável
+                    Nunca nada semelhante tinha sido criado
+                    Recorde de vendas, grande inspiração
+                    Alcançando os da antiga e da nova geração
+                    Vai falar de gráfico? Mano, dá um tempo
+                    Ninguém nunca reclamou de jogar Super Nintendo! <br> <br>
+
+                    Yeah, Minecraft, é
+                    Você conhece
+                    Num mundo de blocos, faço qualquer criação
+                    Onde o único limite é a imaginação
+                    (Yeah!)
+                    Minecraft, é
+                    Você conhece!
+                    Num mundo de blocos, faço qualquer criação
+                    Onde o único limite é a imaginação
+
+                </p>
+                
+            </td>
+            
+        </tr>
+
+        
+
+
+        <!-- RODAPÉ -->
+         <tr style="height: 55px; font-size: 20pt; background-color: #1a1a1a; color: white;">
+
+            <th colspan="4">
+
+                <a href="https://www.youtube.com/@Tauz" target="_blank" style="color: white;">Canal - Youtube</a>
+                
+            </th>
 
          </tr>
     </table>
