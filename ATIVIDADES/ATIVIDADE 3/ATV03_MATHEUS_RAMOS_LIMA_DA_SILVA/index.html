@@ -1,0 +1,88 @@
+<!-- Aluno: Matheus Ramos Lima da Silva -->
+<!-- Turma: 523 -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Foda</title>
+    <link rel="icon" type="image/x-icon" href="img/image.png">
+</head>
+
+<style>
+
+/* Meche na tabela e nas células */
+table, td, th{
+    margin: 0; /*Tira as margens*/
+    border: 1px solid; /*Adiciona bordas de 1 pixel no estilo solido*/
+    border-color: rgb(46, 45, 56); /*Adiciona a cor na borda*/
+    border-collapse: collapse; /*Comprartilha a borda*/
+    
+}
+
+table {
+    min-width: 70%;
+    max-width: 71%;
+}
+
+/* Meche nas células que não são de cabeçalho */
+td {
+    text-align: center; /*Alinha o texto no centro*/
+    color: rgb(0, 0, 0); /*Adiciona cor*/
+}
+
+/* Meche nos dois tipos de células */
+th, td {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*Adiciona estilo da fonte. Obs: Nativo, não foi importado.*/ 
+}
+
+/* Meche na tabela de cabeçalho */
+th {
+    font-size: 14pt; /*Tamanho da fonte*/
+    color: white; /*Adiciona a cor*/
+    background-color:  rgb(46, 45, 56); /*Adiciona cor ao fundo*/
+}
+
+</style>
+
+
+<body>
+
+    <table style="height: 98vh; margin-left: 15%; margin-right: 15%;">
+        <tr>
+            <th colspan="2" style="padding-top: 3%; padding-bottom: 3%;">Página Foda</th>
+        </tr>
+
+        <tr>
+            <!-- Célula Lateral -->
+            <td style="width: 15%; vertical-align: top; padding-top: 2%;background-color: rgb(255, 255, 255);">
+                <a href="curriculo.html" style="text-decoration: none; color: rgb(41, 40, 40); font-weight: bold;" title="linkagemcomcurriculo">Currículo-Matheus</a>
+            </td>
+
+            <!-- Célula de conteúdo -->
+            <td style="padding: 0; vertical-align: top; padding: 0; border-spacing: 0;">
+
+                <iframe src="curriculo.html" style="border: none; width: 100%; height: 70vh; margin: 0;"></iframe>
+
+                
+            </td>
+
+
+        </tr>
+
+        <tr>
+
+            <td colspan="2" style="background-color: rgb(46, 45, 56);" >
+
+                <p style="color: white; font-size: 12pt;">Contatos: mrls9@aluno.ifal.edu.br | @rwvthrdev</p>
+                <a href="https://github.com/rwvthrdev" style="color: white; text-decoration: none; font-weight: bold;" target="_blank" title="githubmeu">GitHub</a>
+
+            </td>
+
+        </tr>
+    </table>
+</table>
+
+</body>
+</html>
