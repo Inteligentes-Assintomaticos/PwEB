@@ -1,4 +1,4 @@
-# 💻 PROGRAMAÇÃO WEB
+# 💻 Programação Web
 
 > **Não esquecer de colocar -webkit- para o safari**
 
