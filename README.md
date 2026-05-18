@@ -2,4 +2,4 @@
 
 > **Não esquecer de colocar -webkit- pro safari**
 
-<img src="/gifs-readme/cpu-on-smoke-cpu-blasts.gif" alt="Computer GIF" width="600">
+<img src="/gifs-readme/cpu-on-smoke-cpu-blasts.gif" alt="Computer GIF" width="600" style="border-radius: 8px">
