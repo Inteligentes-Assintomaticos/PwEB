@@ -15,11 +15,20 @@
 
 <style>
 
+    body {
+        margin: 0; /*Tira as margens*/
+    }
+
+    table {
+        width: 100%; /*Largura da tabela*/
+         /*Tira as margens*/
+    }
+
     /* Meche na tabela e nas células */
     table, td, th{
-        margin: 0; /*Tira as margens*/
+         /*Tira as margens*/
         border: 1px solid; /*Adiciona bordas de 1 pixel no estilo solido*/
-        border-color: rgb(2, 44, 133); /*Adiciona a cor na borda*/
+        border-color: none; /*Adiciona a cor na borda*/
         border-collapse: collapse; /*Comprartilha a borda*/
     }
 
@@ -43,7 +52,7 @@
 
 </style>
 
-<table style="border-collapse: collapse;">
+<table style="border-collapse: collapse; " >
     <tr>
         <td style="padding: 0; ">
             <img src="img/fotocurriculo.png" alt="fotocurricular" width="200" height="100%" title="fotocurriculo">
@@ -58,7 +67,7 @@
     </tr>
 </table>
 
-<table style="width: 100%; border-collapse: collapse; margin-botto;">
+<table style="width: 100%; border-collapse: collapse; height: 58vh; ">
     <tr>
         <th colspan="5" style="padding-top: 3%; padding-bottom: 3%;">Habilidades</th>
     </tr>
