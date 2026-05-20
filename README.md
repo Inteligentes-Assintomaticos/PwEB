@@ -1,5 +1,5 @@
-# 💻 Programação Web
+# 🤪Felipe
 
-> **Não esquecer de colocar -webkit- para o safari**
+> **Teclado desgraçaaaaaaaaaaaaaaaaaaaaado**
 
-<img src="/gifs-readme/cpu-on-smoke-cpu-blasts.gif" alt="Computer GIF" width="600">
+<img src="/gifs-readme/keyboard-computer-enhanced.gif" alt="Computer GIF" width="600">
