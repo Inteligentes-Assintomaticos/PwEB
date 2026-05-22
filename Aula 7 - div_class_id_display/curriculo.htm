@@ -37,6 +37,26 @@
         text-align: center;         /* Alinhar o texto horizontalmente no meio */
         vertical-align: middle;     /* Alinhar o texto verticamentel no meio */
     }
+
+
+    #informacoes_iniciais {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+        align-items: center;
+        gap: 50px;
+
+        border: 1px solid;
+    }
+
+    #informacoes_iniciais p {
+        
+        align-items: center;
+
+        border: 1px solid;
+    }
+
+    
     
 
 </style>
@@ -45,56 +65,24 @@
 
     <!-- Felipe Gabriel Araújo de Freitas - 523 -->
 
+    <!-- Informações Iniciais -->
 
-    
-    
+    <div id="informacoes_iniciais">
+
+        <img title="foto currículo" src="./img/foto-curriculo.png"alt="foto do currículo" width="40%" height="auto">
+        
+
+        <p>Desenvolvedor web com experiência no desenvolvimento de interfaces e aplicações para a web, utilizando tecnologias como <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>. Habituado a boas práticas de desenvolvimento, versionamento com Git e criação de layouts responsivos. Em busca de oportunidade para consolidar a carreira e contribuir com projetos de impacto real.</p>
+
+    </div>
+
+
+
+
+
+    <!-- TABELA -->
+
     <table width="100%" border="0" style="border-collapse: collapse;">
-        
-        
-
-
-        
-        <!-- Informações Iniciais -->
-        <tr style="height: 0;">
-
-            <td width="20%" style="padding-top: 20px;   /* espaço interno 
-            ">
-
-                <img 
-                src="./img/foto-curriculo.png" 
-                alt="foto do currículo" 
-                title="foto currículo"
-                width="90%"
-                height="auto">
-                
-            </td>
-
-            <td colspan="2" style="
-            font-size: 15pt;
-            text-align: justify;    /* justificar o texto */
-            padding: 15px;
-            width: 97%;
-            margin: auto;">
-
-                Desenvolvedor web com experiência no desenvolvimento de interfaces e aplicações para a web, utilizando tecnologias como <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>. Habituado a boas práticas de desenvolvimento, versionamento com Git e criação de layouts responsivos. Em busca de oportunidade para consolidar a carreira e contribuir com projetos de impacto real.
-                
-            </td>
-            
-        </tr>
-
-
-
-
-
-        <!-- Espaço entre as informações -->
-        <tr>
-            <td colspan="3" style="height: 30px;"></td>
-        </tr>
-
-
-
-
-        <!-- === TABELA === -->
 
         <!-- Títulos -->
         <tr style="background-color:  #185FA5; color: #ffffff;">
@@ -157,12 +145,6 @@
                 
         </tr>
         
-
-
-        <tr>
-
-            <td style="height: 20px;"></td>
-        </tr>
 
     </table>
     
