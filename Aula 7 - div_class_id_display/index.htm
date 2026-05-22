@@ -13,55 +13,69 @@
     }
     
 
+
     #tabela {
-        margin: 30px auto 0;
+        margin: 30px auto 0;    /* Margens da tabela */
         
-        width: 80%;
-        height: 70vh;
+        width: 80%;     /* Largura */
+        height: 70vh;   /* Altura */
     }
+
+
+
 
     #cabecalho{
-        background-color: greenyellow;
-
-        width: 100%;
-        height: 100px;
-
-        text-align: center;
-        vertical-align: middle;
+        display: flex;  /* Tipo de display */
+        justify-content: center;    /* Centraliza horizontalmente*/
+        align-items: center;    /* Centraliza verticalmente */
+        
+        height: 100px;  /* Altura */
+        
+        background-color: greenyellow; /* Cor de fundo */
     }
+
+
+
 
 
     .grid {
-        display: grid;
-        grid-template-columns: 10% 100%;
+        display: grid;  /* Tipo de display */
+        grid-template-columns: 0.3fr 2fr;   /* Divisão das colunas ➡️ para criar o menu lateral e deixar o espaço para o conteúdo */
+
+        grid-template-rows: 80vh;   /* Altura desse bloco*/
     }
     
-    #menu-lateral {
-        background-color: antiquewhite;
 
-        width: 10%;
-        min-width: 100px;
-        height: 100%;
+
+
+
+    #menu-lateral {
+
+        
+        background-color: antiquewhite; /* Cor de fundo */
+
     }
+
+
+
+
 
     #conteudo {
-        
-        
-        background-color: brown;
+        background-color: brown;    /* Cor de fundo */
 
-        width: 100%;
-        height: 100%;
-
-        text-align: center;
     }
 
+
+
+
     #rodape {
-        background-color: blueviolet;
-
-        width: 100%;
-        height: 100px;
-
-        text-align: center;
+        display: flex;  /* Tipo de display */
+        justify-content: center;    /* Centraliza horizontalmente*/
+        align-items: center;    /* Centraliza verticalmente */
+        
+        height: 50px;  /* Altura */
+        
+        background-color: blueviolet; /* Cor de fundo *//
 
     }
         
@@ -72,34 +86,38 @@
 </head>
 <body>
 
-    <div id="tabela">
+<div id="tabela">
 
 
-        <!-- Cabeçalho -->
-        <div id="cabecalho">
-
-            <h1>CABEÇALHO</h1>
-            
-        </div>
+    <!-- CABEÇALHO -->
+    <div id="cabecalho">
+        <h1>CABEÇALHO</h1>
+    </div>
 
 
 
-        <div id="menu-lateral" class="grid"></div>
-        
-        <!-- Conteúdo -->
-        <div id="conteudo" class="grid">
+    <div class="grid">
 
-        </div>
+        <!-- MENU LATERAL -->
+        <div id="menu-lateral">MENU LATERAL</div>
         
 
 
-
-        <!-- Rodapé -->
-        <div id="rodape">
-            <h1>RODAPÉ</h1>
+        <!-- CONTEÚDO -->
+        <div id="conteudo">
+            CONTEÚDO
         </div>
 
     </div>
+
+
+
+    <!-- RODAPÉ -->
+    <div id="rodape">
+        <h1>RODAPÉ</h1>
+    </div>
+
+</div>
     
 </body>
 </html>
