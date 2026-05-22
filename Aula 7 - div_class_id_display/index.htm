@@ -31,7 +31,7 @@
         
         height: 100px;  /* Altura */
         
-        background-color: #2C3E50; /* Cor de fundo */
+        background-color: #242323; /* Cor de fundo */
         color: white;
     }
 
@@ -56,7 +56,8 @@
         justify-content: left;  /* Alinha a esquerda */
 
         
-        background-color: antiquewhite; /* Cor de fundo */
+        background-color: #363434; /* Cor de fundo */
+        color: white;
 
         padding-left: 10px; /* Espaço interno a esquerda */
         padding-top: 10px;  /* Espaço interno emcima*/
@@ -68,7 +69,7 @@
         
         font-size: 15pt;    /* Tamanho do texto */
 
-        border-bottom: 1px solid black; /* Boda embaixo do texto */
+        border-bottom: 1px solid white; /* Boda embaixo do texto */
 
         padding-bottom: 10px;   /* Espaço interno embaixo*/
 
@@ -81,12 +82,20 @@
 
     }
 
+    #menu-lateral a {
+        text-decoration: none;
+        color: white;
+    }
+
 
 
 
 
     #conteudo {
         border-right: 1px solid black;
+
+        background-color: #292828;
+        color: white;
     }
 
 
@@ -99,8 +108,9 @@
         
         height: 50px;  /* Altura */
         
-        background-color: blueviolet; /* Cor de fundo *//
+        background-color: #242323; /* Cor de fundo */
 
+        color: white;
     }
         
 
@@ -127,8 +137,8 @@
 
             <h1>PÁGINAS</h1>
             <br>
-            <h2>Currículo</h2>
-            <h2>Player Tauz</h2>
+            <h2><a href="./curriculo.htm" target="iframe">Currículo</a></h2>
+            <h2><a href="./tema_livre.htm" target="iframe">Player Tauz</a></h2>
 
         </div>
         
@@ -137,7 +147,7 @@
         <!-- CONTEÚDO -->
         <div id="conteudo">
 
-            <iframe src="./curriculo.htm" frameborder="0" width="100%" height="100%"></iframe>
+            <iframe name="iframe" title="Páginas" src="./curriculo.htm" frameborder="0" width="100%" height="100%"></iframe>
             
         </div>
 
