@@ -23,13 +23,11 @@
 
 
     table {
-        
+        width: 95%;        
+        height: 50vh;   /* vh = definir altura de acordo com o tamanho da tela */
+
         margin: auto;       /* Ajuste automático das margens ➡ pra centralizar */
         margin-top: 30px;   /* Margem superior ➡ pra dar um espaço*/
-        margin-bottom: 0px; /* Margem inferiro ➡ pra remover a margem inferior */
-
-        height: 100vh;   /* vh = definir altura de acordo com o tamanho da tela */
-
     }
  
 
@@ -40,24 +38,28 @@
 
 
     #informacoes_iniciais {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction: row;
         
-        align-items: center;
+        width: 95%;
+        margin: auto;
+        margin-top: 30px;
+        
         gap: 50px;
-
-        border: 1px solid;
     }
 
     #informacoes_iniciais p {
-        
-        align-items: center;
+        margin: auto;
 
-        border: 1px solid;
     }
 
-    
-    
+
+    #titulo {
+        background-color:  #185FA5;
+        color: #ffffff; 
+        height: 50px;
+    }
+
 
 </style>
 
@@ -69,7 +71,7 @@
 
     <div id="informacoes_iniciais">
 
-        <img title="foto currículo" src="./img/foto-curriculo.png"alt="foto do currículo" width="40%" height="auto">
+        <img title="foto currículo" src="./img/foto-curriculo.png"alt="foto do currículo" width="15%" height="auto">
         
 
         <p>Desenvolvedor web com experiência no desenvolvimento de interfaces e aplicações para a web, utilizando tecnologias como <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>. Habituado a boas práticas de desenvolvimento, versionamento com Git e criação de layouts responsivos. Em busca de oportunidade para consolidar a carreira e contribuir com projetos de impacto real.</p>
@@ -85,7 +87,7 @@
     <table width="100%" border="0" style="border-collapse: collapse;">
 
         <!-- Títulos -->
-        <tr style="background-color:  #185FA5; color: #ffffff;">
+        <tr id="titulo">
 
             
             <th></th>
@@ -97,7 +99,7 @@
         </tr>
 
         <!-- Desenvolvimento Front-End -->
-        <tr style="background-color:  #E6F1FB; color: #0C447C;">
+        <tr class="" style="background-color:  #E6F1FB; color: #0C447C;">
 
             <th width="20%" style="background-color: aliceblue;">Desenvolvimento Front-End</th>
 
