@@ -10,15 +10,25 @@
     * {
         /* border: 1px solid red; */
         margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
     
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
 
 
-    #tabela {
-        margin: 30px auto 0;    /* Margens da tabela */
+    #layout {
+        display: flex;
+        flex-direction: column;
         
-        width: 80%;     /* Largura */
-        height: 70vh;   /* Altura */
+        margin: 0;    /* Margens da tabela */
+        
+        width: 100vw;     /* Largura */
+        height: 100vh;   /* Altura */
     }
 
 
@@ -104,7 +114,7 @@
         justify-content: center;    /* Centraliza horizontalmente*/
         align-items: center;    /* Centraliza verticalmente */
         
-        height: 50px;  /* Altura */
+        height: 100px;  /* Altura */
         
         background-color: #242323; /* Cor de fundo */
 
@@ -118,7 +128,7 @@
 </head>
 <body>
 
-<div id="tabela">
+<div id="layout">
 
 
     <!-- CABEÇALHO -->
