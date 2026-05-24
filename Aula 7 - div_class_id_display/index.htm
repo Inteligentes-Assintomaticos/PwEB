@@ -7,49 +7,50 @@
     
     
 <style>
-    * {
-        /* border: 1px solid red; */
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+
     
     html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
+        height: 100%;   /* Altura 100%*/
+        margin: 0;      /* Margens zerada*/
+        padding: 0;     /* Espaço interno zerado*/
     }
 
 
-    #layout {
-        display: flex;
-        flex-direction: column;
+    /* ===LAYOUT=== */
+
+    #layout {                   /* Para*/        
+        display: flex;          /* Tipo de display*/
+        flex-direction: column; /* Direção dos elementos ➡️ em coluna (um abaixo do outro)*/
         
-        margin: 0;    /* Margens da tabela */
+        margin: 0;         /* Margens da tabela */
         
         width: 100vw;     /* Largura */
         height: 100vh;   /* Altura */
     }
 
+    /* ===LAYOU DE CABEÇALHO E RODAPÉ=== */
 
-
-
-    #cabecalho{
-        display: flex;  /* Tipo de display */
+    .layout {                             /* Cor e altura do cabeçalho e do rodapé*/
+        background-color: #100E09;      /* Cor de fundo*/
+        color: white;                   /* Cor do texto */
+        height: 100px;                    /* Altura*/
+        display: flex;              /* Tipo de display*/
         justify-content: center;    /* Centraliza horizontalmente*/
-        align-items: center;    /* Centraliza verticalmente */
-        
-        height: 100px;  /* Altura */
-        
-        background-color: #100E09; /* Cor de fundo */
-        color: white;
+        align-items: center;        /* Centraliza verticalmente */
+    }
+
+    #cabecalho {    /* Cabeçalho*/
+        /*Atualmente sem uso*/
+    }
+
+    #rodape {   /* Rodapé*/
+        /* Atualmente sem uso*/
     }
 
 
+    /* ===LAYOUT DE MENU E CONTEÚDO=== */
 
-
-
-    .grid {
+    .grid {             /* Latout do menu e conteúdo*/
         display: grid;  /* Tipo de display */
         grid-template-columns: 0.3fr 2fr;   /* Divisão das colunas ➡️ para criar o menu lateral e deixar o espaço para o conteúdo */
 
@@ -59,72 +60,55 @@
 
 
 
+    /* ===MENU LATERAL=== */
 
-    #menu-lateral {
-        display: flex;  /* Tipo de display */
-        flex-direction: column; /* Direção dos elementos ➡️ um abaixo do outro */
-        justify-content: left;  /* Alinha a esquerda */
+    #menu-lateral {     /* Menu lateral*/
+        display: flex;  /* Tipo de display*/
+        flex-direction: column; /* Direção dos elementos ➡️ um abaixo do outro*/
+        justify-content: left;  /* Alinha a esquerda*/
 
         
-        background-color: #292828; /* Cor de fundo */
-        color: white;
+        background-color: #292828;  /* Cor de fundo*/
+        color: white;               /* Cor do texto*/
 
-        padding-left: 10px; /* Espaço interno a esquerda */
+        padding-left: 10px; /* Espaço interno a esquerda*/
         padding-top: 10px;  /* Espaço interno emcima*/
     }
 
-    #menu-lateral h1 {
-        align-self: flex-start; /* Para o elemento ocupar apenas o seu espaço */
-        width: 90%;   /* Para não ocupar a linha toda */ 
+    #menu-lateral h1 {          /* Título*/
+        align-self: flex-start; /* Para o elemento ocupar apenas o seu espaço*/
+        width: 90%;             /* Para não ocupar a linha toda*/ 
         
-        font-size: 15pt;    /* Tamanho do texto */
+        font-size: 15pt;        /* Tamanho do texto*/
 
-        border-bottom: 1px solid white; /* Boda embaixo do texto */
+        border-bottom: 1px solid white; /* Boda embaixo do texto*/
 
         padding-bottom: 10px;   /* Espaço interno embaixo*/
 
-        margin-top: 40px;
+        margin-top: 40px;       /* Para dar um espaço no topo*/
     }
 
-    #menu-lateral h2 {
-        font-size: 17pt;    /* Tamanho da fonte */
-        padding-left: 30px; /* Espaço interno a esquerda */
+    #menu-lateral h2 {      /* Subtítulo*/
+        font-size: 17pt;    /* Tamanho da fonte*/
+        padding-left: 30px; /* Espaço interno a esquerda*/
 
-        margin-bottom: 10px;
+        margin-bottom: 10px;    /* Para dar um espaço entre os links*/
     }
 
-    #menu-lateral a {
-        text-decoration: none;  /* Pare remover o underline do link */
-        color: white;       /* Cor do texto */
+    #menu-lateral a {           /* Links do menu lateral*/
+        text-decoration: none;  /* Pare remover o underline do link*/
+        color: white;        /* Cor do texto*/
     }
 
 
-
-
+    /* ===CONTEÚDO=== */
 
     #conteudo {
         background-color: #1c1c1c;  /* Cor de fundo*/
-        color: white;   /* Cor do texto */
     }
 
-
-
-
-    #rodape {
-        display: flex;  /* Tipo de display */
-        justify-content: center;    /* Centraliza horizontalmente*/
-        align-items: center;    /* Centraliza verticalmente */
         
-        height: 100px;  /* Altura */
-        
-        background-color: #100E09; /* Cor de fundo */
-
-        color: white;   /* Cor do texto */
-    }
-        
-
-        
-    </style>
+</style>
 
 </head>
 <body>
@@ -133,7 +117,7 @@
 
 
     <!-- CABEÇALHO -->
-    <div id="cabecalho">
+    <div id="cabecalho" class="layout">
         <h1>FELIPE GABRIEL ARAÚJO DE FREITAS</h1>
     </div>
 
@@ -156,7 +140,7 @@
         <!-- CONTEÚDO -->
         <div id="conteudo">
 
-            <iframe name="iframe" title="Páginas" src="./tema_livre.htm" frameborder="0" width="100%" height="100%"></iframe>
+            <iframe name="iframe" title="Páginas" src="./curriculo.htm" frameborder="0" width="100%" height="100%"></iframe>
             
         </div>
 
@@ -164,7 +148,7 @@
 
 
     <!-- RODAPÉ -->
-    <div id="rodape">
+    <div id="rodape" class="layout">
         <h1>2026</h1>
     </div>
 

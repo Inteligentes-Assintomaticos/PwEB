@@ -11,72 +11,83 @@
 <style>
 
     body, html {
-        margin: 0;      /* Margens da página */
-        height: auto;
+        margin: 0;      /* Margens da página*/
+        height: auto;   /* Ajuste de altura automática*/
 
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   /* Fonte do texto */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   /* Fonte do texto*/
 
-        scrollbar-width: none;  /* Deixa o scroll invisível */
+        scrollbar-width: none;  /* Deixa o scroll invisível*/
 
-        color: white;   /* Cor do texto */
+        color: white;   /* Cor do texto*/
     }
 
 
-    table {
-        width: 95%;        
-        height: 50vh;   /* vh = definir altura de acordo com o tamanho da tela */
+    /* ===TABELA=== */
+    
+    table {                             /* Tabela*/
+        border-collapse: collapse;      /* Para não deixar bordas duplicadas*/
+        
+        width: 95%;      /* Largura*/  
+        height: 50vh;    /* vh = definir altura de acordo com o tamanho da tela*/
 
-        margin: auto;       /* Ajuste automático das margens ➡ pra centralizar */
+        margin: auto;       /* Ajuste automático das margens ➡ pra centralizar*/
         margin-top: 30px;   /* Margem superior ➡ pra dar um espaço*/
     }
  
 
-    tr {
-        text-align: center;         /* Alinhar o texto horizontalmente no meio */
-        vertical-align: middle;     /* Alinhar o texto verticamentel no meio */
+    tr {                            /* Linha*/
+        text-align: center;         /* Alinhar o texto horizontalmente no meio*/
+        vertical-align: middle;     /* Alinhar o texto verticamentel no meio*/
     }
 
 
-    #informacoes_iniciais {
-        display: flex;
-        flex-direction: row;
+
+    /* ===INFORMAÇÕES INICIAIS=== */
+
+    #informacoes_iniciais {     /* Primeira seção*/
+        display: flex;          /* Tipo de display*/
+        flex-direction: row;    /* Organização dos elementos em linha*/
         
-        width: 95%;
-        margin: auto;
-        margin-top: 30px;
+        width: 95%;             /* Largura */
+        margin: auto;           /* Para centralizar */
+        margin-top: 30px;       /* Para dar um espaço no topo*/
         
-        gap: 50px;
+        gap: 50px;              /* Espaço entre os elementos (imagem e texto)*/
     }
 
-    #informacoes_iniciais p {
-        margin: auto;
-        width: 80%;
+    #informacoes_iniciais p {   /* Parágrafos*/
+        margin: auto;           /* Para centralizar*/
+        width: 80%;             /* Largura*/
     }
 
 
-    #titulo {
-        background-color:  #100E09;
-        border-bottom: 1px solid white;
+    /* ===TABELA=== */
+
+    #titulo {                               /* Título*/
+        background-color:  #100E09;       /* Cor de fundo*/
+        border-bottom: 1px solid white;   /* Borda de baixo*/
         
-        color: white; 
-        height: 50px;
+        height: 50px;                       /* Altura*/
     }
 
 
-    .linha1 {
-        background-color: #2e2e2e;
-        border-right: 1px solid white;
-        border-left: 1px solid white;
+    .linha-par {    /* Configuração de linha par*/
+        /* Atualmente nada*/
     }
 
-    .linha2 {
-        border-right: 1px solid white;
-        border-left: 1px solid white;
+    .linha-impar {                           /* Configuração de linha ímpar*/
+        background-color: #2e2e2e;          /* Cor de fundo*/
     }
 
-    .separador {
-        border-right: 1px solid white;
-        border-left: 1px solid white;
+
+    .bordas {                               /* Borda das linhas */
+        border-right: 1px solid white;    /* Borda direita*/
+        border-left: 1px solid white;     /* Borda esquerda*/
+    }
+
+    .separador {                            /* Separador entre as linhas*/
+        border-right: 1px solid white;    /* Separador para o lado direito*/
+        border-left: 1px solid white;     /* Separador para o lado esquerdo*/
     }
 
 </style>
@@ -102,7 +113,7 @@
 
     <!-- TABELA -->
 
-    <table width="100%" border="0" style="border-collapse: collapse;">
+    <table width="100%" border="0">
 
         <!-- Títulos -->
         <tr id="titulo">
@@ -117,7 +128,7 @@
         </tr>
 
         <!-- Desenvolvimento Front-End -->
-        <tr class="linha1">
+        <tr class="linha-impar bordas">
 
             <th width="20%">Desenvolvimento Front-End</th>
 
@@ -129,7 +140,7 @@
         </tr>
 
         <!-- Desenvolvimento Back-End-->
-        <tr class="linha2">
+        <tr class="linha-par bordas">
 
             <th>Desenvolvimento Back-End</th>
 
@@ -141,7 +152,7 @@
         </tr>
 
         <!-- Desenvolvimento Full Stack -->
-        <tr class="linha1">
+        <tr class="linha-impar bordas">
 
             <th>Desenvolvimento Full Stack</th>
 
@@ -154,7 +165,7 @@
 
 
         <!-- Segurança em Aplicações Web -->
-        <tr class="linha2" style="border-bottom: 1px solid white;">
+        <tr class="linha-par bordas" style="border-bottom: 1px solid white; /* Borda de baixo ➡️ para fechar a tabela*/">
 
             <th>Segurança em Aplicações Web</th>
 
