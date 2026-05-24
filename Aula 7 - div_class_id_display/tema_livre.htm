@@ -11,88 +11,69 @@
 <style>
 
     body, html {
-        height: auto;    /* Altura da página */
-        margin: 0;      /* Margens da página */
+        height: auto;       /* Altura da página*/
+        margin: 0;          /* Margens da página*/
 
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   /* Fonte do texto */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;       /* Fonte do texto*/
 
-        scrollbar-width: none;  /* Scroll invisível */
-
-        color: white;   /* Cor do texto */
+        scrollbar-width: none;      /* Scroll invisível*/
+        color: white;             /* Cor do texto*/
     }
 
 
-    table {
+
+
+    /* ===INFORMAÇÕES INICIAS=== */
+
+    #informacoes_iniciais {     /* Pega a primeira seção da página */
+        display: flex;          /* Tipo de display*/
+        flex-direction: row;    /* Para alinhar os elementos em uma linha*/
         
-        margin: auto;       /* Ajuste automático das margens ➡ pra centralizar */
-        margin-top: 30px;   /* Margem superior ➡ pra dar um espaço*/
-        margin-bottom: 0px; /* Margem inferiro ➡ pra remover a margem inferior */
-
-        height: 100vh;   /* vh = definir altura de acordo com o tamanho da tela */
-
-    }
-
-    
-
-    tr {
-        text-align: center;         /* Alinhar o texto horizontalmente no meio */
-        vertical-align: middle;     /* Alinhar o texto verticamentel no meio */
-    }
-    
-
-
-
-    #informacoes_iniciais {
-        display: flex;
-        flex-direction: row;
+        width: 95%;         /* Largura*/
+        margin: auto;       /* Para centralizar*/
+        margin-top: 30px;   /* Para dar um espaço no topo*/
         
-        width: 95%;
-        margin: auto;
-        margin-top: 30px;
-        
-        gap: 50px;
+        gap: 50px;          /* Espaço entre os elementos (foto e texto)*/
     }
 
     #informacoes_iniciais p {
-        margin: auto;
+        margin: auto;           /* Para ajustar o alinhamento do texto*/
 
-        width: 70%;
-        text-align: justify;
+        width: 70%;             /* Para reduzir a largura e deixar o texto "empilhado"*/
+        text-align: justify;    /* Para deixar o texto justificado*/
 
     }
 
 
-    #musica {
-        margin-top: 100px;
+    /* ===MÚSICA===*/
+
+    #musica {               /* Seção com a letra da música*/
+        margin-top: 100px;  /* Para dar u espaço*/
     }
 
-    #musica h2 {
-        background-color: #100E09;
+    #musica h2 {                          /* Título da seção*/
+        background-color: #100E09;      /* Cor de fundo*/
 
-        text-align: center;
+        text-align: center;     /* Alinhamento do texto*/
+
+        width: 100%;            /* Largura*/
+        padding: 15px;          /* Espaço interno*/
+    }
+
+
+
+    .grid {             /* Letra da música*/
+        display: grid;  /* Tipo de display*/
+        grid-template-columns: max-content max-content; /* Para separar em duas colunas usando o máximo de espaço disponível*/
         
-        width: 100%;
-        padding: 15px;
-    }
+        margin: 40px auto;  /* Para dar um espaço no topo e centralizar horizontalmente*/
 
+        gap: 50px;          /* Para dar um espaço entre os itens*/
+        width: max-content; /* Para usar o máximo de largura possível*/
 
-
-    .grid {
-        display: grid;
-        grid-template-columns: max-content max-content;
-        place-items: center;
-        justify-content: center;
-        align-items: stretch;
-        
-        margin: 40px auto;
-        padding: 0 20px;
-
-        gap: 50px;
-
-        width: max-content;
-        background-color: rgba(36,36,36,0.6);
-        padding: 30px;
-        border-radius: 20px;
+        background-color: rgba(36,36,36,0.6);   /* Cor de fundo*/
+        padding: 30px;          /* Espaço interno*/
+        border-radius: 20px;    /* Para arredondar as bordas*/
     }
 
 
@@ -123,7 +104,9 @@
 
         <div class="grid">
         
-            <p style="border-right: 1px solid white; padding-right: 35px;">
+            <p style="border-right: 1px solid white; /* Borda na direita*/
+             padding-right: 35px;   /* Espaço interno ➡️ para deixar a linha (borda) mais pro lado*/
+             ">
             Bem-vindo ao Minecraft, meu amigo <br>
             Na jornada desse game, ficará surpreendido <br>
             Sinta liberdade para poder criar <br>
