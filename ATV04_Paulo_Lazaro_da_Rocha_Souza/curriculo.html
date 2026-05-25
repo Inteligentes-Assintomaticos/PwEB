@@ -4,95 +4,132 @@
 <head>
     <meta charset="UTF-8">
     <title>Conteúdo do Currículo</title>
-    <style>
+<style>
 
-        body, html {
-            background-color: #fcfcfc;
-        }
-        /* CSS Interno com Classes e IDs */
+    body, html {
+        background-color: #fcfcfc;
+    }
 
-        /* ID para o container principal do currículo */
-        #container-curriculo {
-            background-color: #fcfcfc;
-            color: #2d2b2b;
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
 
-        /* Classe para formatar os títulos de seção */
-        .titulo-secao {
-            border-bottom: 2px solid #2c3e50;
-            color: #2c3e50;
-            margin-top: 20px;
-            padding-bottom: 5px;
-        }
 
-        /* Classe para as imagens de perfil */
-        .foto-perfil {
-            width: 150px;
-            display: block;
-            margin-bottom: 15px;
-            border: 2px solid #2c3e50;
-        }
+    /* ID para o container principal do currículo */
+    #container-curriculo {
+        color: #2d2b2b;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
 
-        /* Classe para os blocos de informações (cartões) */
-        .cartao-info {
-            border: 1px solid #2c3e50;
-            padding: 15px;
-            margin-top: 15px;
-            background-color: #ffffff;
-        }
+    /* Classe para formatar os títulos de seção */
+    .titulo-secao {
+        border-bottom: 2px solid #2c3e50;
+        color: #2c3e50;
+        margin-top: 20px;
+        padding-bottom: 5px;
+    }
 
-        /* Tabela permitida apenas para dados tabulares */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
+    /* Classe para as imagens de perfil */
+    #foto-perfil {
+        width: 150px;
+        display: block;
+        margin-bottom: 15px;
+        border: 2px solid #2c3e50;
+    }
 
-        td {
-            border: 1px solid #2c3e50;
-            padding: 10px;
-            text-align: center;
-        }
-    </style>
+    /* Classe para os blocos de informações (cartões) */
+    .cartao-info {
+        border: 1px solid #2c3e50;
+        padding: 15px;
+        margin-top: 15px;
+        background-color: #ffffff;
+    }
+
+
+
+    /* Tabela permitida apenas para dados tabulares */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+
+
+    td {
+        border: 1px solid #2c3e50;
+        padding: 10px;
+        text-align: center;
+    }
+
+
+    .titulos {
+        color: #2c3e50;
+        margin: 0;
+    }
+
+
+</style>
+
 </head>
 <body>
 
-    <div id="container-curriculo">
-        <img src="img/image.png" alt="Foto de Perfil" class="foto-perfil">
+<div id="container-curriculo">
+
+    <div id="curriculo">
+
+        <img title="Foto de Perfil" src="img/image.png" alt="Foto de Perfil" id="foto-perfil">
         
+
         <h2 class="titulo-secao">Dados Pessoais</h2>
+
         <p><b>Nome:</b> Paulo Lázaro da Rocha Souza</p>
         <p><b>Idade:</b> 17 anos</p>
         <p><b>Objetivo:</b> Atuar fora da área de informática.</p>
 
+
         <h2 class="titulo-secao">Formação Acadêmica</h2>
+
         <p>Ensino Médio em andamento - IFAL</p>
 
+
+
         <h2 class="titulo-secao">Experiência Profissional</h2>
+
         <p><i>Em busca da primeira oportunidade.</i></p>
 
-        <h2 class="titulo-secao">Mais sobre Mim</h2>
-        <div class="cartao-info">
-            <table>
-                <tr>
-                    <td>
-                        <h3 style="color: #2c3e50; margin: 0;">Hobbies</h3>
-                        <p>Assistir meus animes e séries.</p>
-                    </td>
-                    <td>
-                        <h3 style="color: #2c3e50; margin: 0;">Metas</h3>
-                        <p>Tornar-me bem sucedido.</p>
-                    </td>
-                    <td>
-                        <h3 style="color: #2c3e50; margin: 0;">Sonhos</h3>
-                        <p>Viajar pelo mundo e conhecer novas culturas.</p>
-                    </td>
-                </tr>
-            </table>
-        </div>
+
+        
     </div>
+    
+    <div class="cartao-info">
+        <h2 class="titulo-secao">Mais sobre Mim</h2>
+
+
+        <table>
+
+            <tr>
+
+                <td>
+                    <h3 class="titulos">Hobbies</h3>
+                    <p>Assistir meus animes e séries.</p>
+                </td>
+
+
+                <td>
+                    <h3 class="titulos">Metas</h3>
+                    <p>Tornar-me bem sucedido.</p>
+                </td>
+
+
+                <td>
+                    <h3 class="titulos">Sonhos</h3>
+                    <p>Viajar pelo mundo e conhecer novas culturas.</p>
+                </td>
+
+            </tr>
+        </table>
+
+    </div>
+
+</div>
 
 </body>
 </html>
