@@ -8,13 +8,11 @@
     <link rel="icon" type="image/x-icon" href="img/tiringa.ico">
 
 <style>
-    /* CSS Interno para o Layout Mestre usando Divs, IDs e Classes */
 
     /* Estilos globais */
     body, html {
-        height: 100vh;
-        margin: 0;
-        font-family: Arial, sans-serif;
+        margin: 0;  /* Para zerar as margens */
+        font-family: Arial, sans-serif; /* Fonte */
         overflow: hidden; /* Evita rolagem na página principal */
     }
 
@@ -23,24 +21,24 @@
     /* TOPO E RODAPÉ */
 
     .topo-e-rodape {
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        background-color: #111111;
-        height: 100px;
+        text-align: center; /* Centraliza texto */
+        display: flex;      /* Tipo de display*/
+        align-items: center;    /* Centralizar */
+        justify-content: center;    /* Centralizar */
+        color: white;   /* Cor do texto*/
+        background-color: #111111;  /* cor de fundo*/
+        height: 100px;  /* altura */
     }
     
     
     /* ID para o cabeçalho (Topo) */
     #topo-site {
-
+        /* não utilizado*/
     }
 
     /* ID para o rodapé */
     #rodape-site {
-
+        /* não utlizado */
     }
 
 
@@ -48,22 +46,23 @@
 
 
     #menu-lateral-e-conteudo {
-        display: grid;
-        grid-template-columns: 200px auto;
+        display: grid;      /* display */
+        grid-template-columns: 200px auto;  /* Largura de 200px pro menu e restante pro conteúdo */
 
-        grid-template-rows: 80vh;   /* Altura desse bloco*/
+        grid-template-rows: 80vh;   /* Altura do bloco */
     }
 
     /* ID para o menu lateral */
     #menu-lateral {
-        background-color: #ff7300;
-        padding: 20px;
+        background-color: #ff7300;  /* cor de fundo */
+        padding: 20px;  /* espaço interno */
+        color: white;   /* cor do texto */
     }
 
     
     /* ID para o container do conteúdo principal */
     #conteudo-principal {
-        background-color: #f0f0f0;
+        background-color: #f0f0f0;  /* cor de fundo */
     }
 
 
@@ -71,32 +70,32 @@
 
     /* Classe para os links de navegação */
     .link-navegacao {
-        color: white;
-        text-decoration: none;
-        display: block;
-        margin-bottom: 15px;
-        font-weight: bold;
-        padding: 10px;
-        border-bottom: 1px solid rgba(255,255,255,0.3);
+        color: white;   /* cor do texto */
+        text-decoration: none;  /* tirar underline */
+        display: block; /* display*/
+        margin-bottom: 15px;    /* margem de baixo */
+        font-weight: bold;  /* pra deixar em negrito */
+        padding: 10px;  /* espaço interno */
+        border-bottom: 1px solid rgba(255,255,255,0.3); /* borda em baixo com rgba (para configurar opacidade) */
     }
 
 
     /* ID para o link externo diferenciado */
     #link-externo-destaque {
-        color: #111111;
-        font-size: 12px;
-        text-decoration: underline;
-        margin-top: 30px;
-        display: block;
+        color: #111111; /* cor do texto */
+        font-size: 12px;    /* tamanho do texto */
+        text-decoration: underline; /* para colocar underline */
+        margin-top: 30px;   /* margem superior */
+        display: block; /* display */
     }
 
 
 
     /* Ajustando Iframe */
     iframe {
-        width: 100%;
-        height: 100%;
-        border: none;
+        width: 100%;    /* largura */
+        height: 100%;   /* altura */
+        border: none;   /* sem borda */
     }
 
 
@@ -115,7 +114,8 @@
 
         <!-- Menu Lateral usando ID -->
         <div id="menu-lateral">
-            <h2 style="color: white; margin-top: 0;">Menu</h2>
+            <h2 style="margin-top: 0;   /* para zerar a margem de cima*/
+            ">Menu</h2>
             
             <!-- Links usando Classes -->
             <a href="curriculo.html" target="janela_iframe" class="link-navegacao">Meu Currículo</a>
