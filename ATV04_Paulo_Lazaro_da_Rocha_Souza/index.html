@@ -7,130 +7,142 @@
     <!-- Favicon da página -->
     <link rel="icon" type="image/x-icon" href="img/tiringa.ico">
 
-    <style>
-        /* CSS Interno para o Layout Mestre usando Divs, IDs e Classes */
+<style>
+    /* CSS Interno para o Layout Mestre usando Divs, IDs e Classes */
 
-        /* Estilos globais */
-        body, html {
-            height: 100%;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            overflow: hidden; /* Evita rolagem na página principal */
-        }
+    /* Estilos globais */
+    body, html {
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        overflow: hidden; /* Evita rolagem na página principal */
+    }
 
-        /* 1. IDs para elementos estruturais únicos */
 
-        /* ID para o cabeçalho (Topo) */
-        #topo-site {
-            height: 100px;
-            background-color: #111111;
-            color: white;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-bottom: 2px solid #ff7300;
-        }
 
-        /* ID para o menu lateral */
-        #menu-lateral {
-            width: 200px;
-            background-color: #ff7300;
-            height: calc(100% - 160px); /* Altura total menos topo e rodapé */
-            float: left;
-            padding: 20px;
-            box-sizing: border-box;
-        }
+    /* TOPO E RODAPÉ */
 
-        /* ID para o container do conteúdo principal */
-        #conteudo-principal {
-            height: calc(100% - 160px);
-            margin-left: 200px; /* Afasta o conteúdo do menu lateral */
-            background-color: #f0f0f0;
-            box-sizing: border-box;
-        }
+    .topo-e-rodape {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: #111111;
+    }
+    
+    
+    /* ID para o cabeçalho (Topo) */
+    #topo-site {
+        height: 100px;
+    }
 
-        /* ID para o rodapé */
-        #rodape-site {
-            height: 60px;
-            background-color: #111111;
-            color: white;
-            text-align: center;
-            clear: both;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+    /* ID para o rodapé */
+    #rodape-site {
+        height: 60px;
+        clear: both;
+    }
 
-        /* 2. Classes para elementos reutilizáveis */
 
-        /* Classe para os links de navegação */
-        .link-navegacao {
-            color: white;
-            text-decoration: none;
-            display: block;
-            margin-bottom: 15px;
-            font-weight: bold;
-            padding: 10px;
-            border-bottom: 1px solid rgba(255,255,255,0.3);
-        }
+    /* MENU LATERAL */
 
-        /* Classe para efeito de hover nos links */
-        .link-navegacao:hover {
-            background-color: rgba(0,0,0,0.1);
-            border-radius: 5px;
-        }
 
-        /* Classe para o link externo diferenciado */
-        .link-externo-destaque {
-            color: #111111;
-            font-size: 12px;
-            text-decoration: underline;
-            margin-top: 30px;
-            display: block;
-        }
+    #menu-lateral-e-conteudo {
+        display: grid;
+        grid-template-columns: 200px auto;
 
-        /* Estilo do Iframe */
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
+    }
+
+    /* ID para o menu lateral */
+    #menu-lateral {
+        background-color: #ff7300;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    
+    /* ID para o container do conteúdo principal */
+    #conteudo-principal {
+        height: calc(100% - 160px);
+        margin-left: 200px; /* Afasta o conteúdo do menu lateral */
+        background-color: #f0f0f0;
+        box-sizing: border-box;
+    }
+
+
+    /* 2. Classes para elementos reutilizáveis */
+
+    /* Classe para os links de navegação */
+    .link-navegacao {
+        color: white;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 15px;
+        font-weight: bold;
+        padding: 10px;
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+    }
+
+
+    /* ID para o link externo diferenciado */
+    #link-externo-destaque {
+        color: #111111;
+        font-size: 12px;
+        text-decoration: underline;
+        margin-top: 30px;
+        display: block;
+    }
+
+
+
+    /* Ajustando Iframe */
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+
+</style>
+
 </head>
 <body>
 
     <!-- Cabeçalho usando ID -->
-    <div id="topo-site">
+    <div id="topo-site" class="topo-e-rodape">
         <h1>Portal do Paulo Lázaro - ATV04</h1>
     </div>
 
-    <!-- Menu Lateral usando ID -->
-    <div id="menu-lateral">
-        <h2 style="color: white; margin-top: 0;">Menu</h2>
-        
-        <!-- Links usando Classes -->
-        <a href="curriculo.html" target="janela_iframe" class="link-navegacao">Meu Currículo</a>
-        <a href="tema.html" target="janela_iframe" class="link-navegacao">Tema Livre (DBZ)</a>
-        
-        <!-- Link Externo -->
-        <a href="https://www.google.com" target="_blank" class="link-externo-destaque">Pesquisar no Google</a>
-    </div>
 
-    <!-- Área de Conteúdo usando ID -->
-    <div id="conteudo-principal">
-        <!-- Iframe envelopado em uma div conforme instrução -->
-        <iframe 
-            src="curriculo.html" 
-            name="janela_iframe" 
-            title="Área de exibição das páginas internas"
-            width="100%" 
-            height="100%">
-        </iframe>
-    </div>
+    <div id="menu-lateral-e-conteudo">
 
+        <!-- Menu Lateral usando ID -->
+        <div id="menu-lateral">
+            <h2 style="color: white; margin-top: 0;">Menu</h2>
+            
+            <!-- Links usando Classes -->
+            <a href="curriculo.html" target="janela_iframe" class="link-navegacao">Meu Currículo</a>
+            <a href="tema.html" target="janela_iframe" class="link-navegacao">Tema Livre (DBZ)</a>
+            
+            <!-- Link Externo -->
+            <a href="https://www.google.com" target="_blank" id="link-externo-destaque">Pesquisar no Google</a>
+        </div>
+
+        <!-- Área de Conteúdo usando ID -->
+        <div id="conteudo-principal">
+            <!-- Iframe envelopado em uma div conforme instrução -->
+            <iframe 
+                src="curriculo.html" 
+                name="janela_iframe" 
+                title="Área de exibição das páginas internas"
+                width="100%" 
+                height="100%">
+            </iframe>
+        </div>
+
+    </div>
     <!-- Rodapé usando ID -->
-    <div id="rodape-site">
+    <div id="rodape-site" class="topo-e-rodape">
         <p>&copy; 2026 - Paulo Lázaro da Rocha Souza - Turma 523 - ATV04</p>
     </div>
 
