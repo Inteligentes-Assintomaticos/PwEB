@@ -7,6 +7,8 @@
 
     <title>Currículo</title>
 
+    <!-- Felipe Gabriel Araújo de Freitas - 523 -->
+
 
 <style>
 
@@ -63,13 +65,26 @@
 
     /* ===TABELA=== */
 
-    #titulo {                               /* Título*/
+    .titulo-e-rodape {                               /* Título*/
         background-color:  #100E09;       /* Cor de fundo*/
         border-bottom: 1px solid white;   /* Borda de baixo*/
         
         height: 50px;                       /* Altura*/
     }
 
+    #titulo {   /* Títulos*/
+        /* Sem uso*/
+    }
+
+    
+    #rodape {       /* Rodapé*/
+        font-size: 20pt;
+    }
+
+    #rodape a {                 /* Link do rodapé*/
+        color: white;         /* Cor do texto*/
+    }   
+    
 
     .linha-par {    /* Configuração de linha par*/
         /* Atualmente nada*/
@@ -90,6 +105,18 @@
         border-left: 1px solid white;     /* Separador para o lado esquerdo*/
     }
 
+
+
+    #link-externo {
+        background-color: #100E09;      /* Cor de fundo*/
+
+        text-align: center;     /* Alinhamento do texto*/
+
+        margin: 50px 0px 50px 0px;
+        
+        width: 100%;            /* Largura*/
+        padding: 1px;          /* Espaço interno*/
+    }
     
 </style>
 
@@ -97,7 +124,7 @@
 
 <body>
 
-    <!-- Felipe Gabriel Araújo de Freitas - 523 -->
+
 
     <!-- Informações Iniciais -->
 
@@ -119,7 +146,7 @@
     <table width="100%" border="0">
 
         <!-- Títulos -->
-        <tr id="titulo">
+        <tr class="titulo-e-rodape" id="titulo">
 
             
             <th></th>
@@ -168,7 +195,7 @@
 
 
         <!-- Segurança em Aplicações Web -->
-        <tr class="linha-par bordas" style="border-bottom: 1px solid white; /* Borda de baixo ➡️ para fechar a tabela*/">
+        <tr class="linha-par bordas">
 
             <th>Segurança em Aplicações Web</th>
 
@@ -178,9 +205,20 @@
             <td>OWASP, Ethical Hacking Web (Desec, Udemy)</td>
                 
         </tr>
-        
 
+
+        <!-- GitHub -->
+        <tr class="titulo-e-rodape bordas" id="rodape"
+        style="border-bottom: 1px solid white; /* Borda de baixo ➡️ para fechar a tabela*/">
+
+            <th colspan="3">
+                <a title="Meu Perfil GitHub" href="https://github.com/Felipe-dev7" target="_blank">Github</a>
+            </th>
+
+        </tr>
+        
     </table>
     
+
 </body>
 </html>
