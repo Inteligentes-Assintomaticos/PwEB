@@ -15,7 +15,7 @@
 
     
     html, body {
-        height: 100%;   /* Altura 100%*/
+        height: auto;   /* Altura */
         margin: 0;      /* Margens zerada*/
         padding: 0;     /* Espaço interno zerado*/
         color: white; /* Cor do texto*/
@@ -28,20 +28,21 @@
         display: flex;          /* Tipo de display*/
         flex-direction: column; /* Direção dos elementos ➡️ em coluna (um abaixo do outro)*/
         
-        margin: 0;         /* Margens da tabela */
+        margin: 30px auto;      /* Margens da tabela ➡ 30px top e bottom e auto para right e left*/
         
-        width: 100vw;     /* Largura */
-        height: 100vh;   /* Altura */
+        width: 95%;     /* Largura */
+        height: 100%;   /* Altura */
     }
 
     /* ===LAYOU DE CABEÇALHO E RODAPÉ=== */
 
     .layout {                             /* Cor e altura do cabeçalho e do rodapé*/
-        background-color: #100E09;      /* Cor de fundo*/
-        height: 100px;                    /* Altura*/
         display: flex;              /* Tipo de display*/
         justify-content: center;    /* Centraliza horizontalmente*/
         align-items: center;        /* Centraliza verticalmente */
+
+        background-color: #100E09;      /* Cor de fundo*/
+        height: 100px;                    /* Altura*/
     }
 
     #cabecalho {    /* Cabeçalho*/
