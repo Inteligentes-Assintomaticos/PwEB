@@ -1,0 +1,160 @@
+<!-- José Adrian Nascimento da Silva - ATV04 - Turma 523 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/foto-curriculo.png" type="image/x-icon">
+
+    <title>José Adrian</title>
+
+    <style>
+
+        /* ===== CONFIGURAÇÕES GERAIS ===== */
+        body, html{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        /* ===== LAYOUT PRINCIPAL ===== */
+        #layout{
+            width: 85%;
+            height: 95vh;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ===== CABEÇALHO ===== */
+        #cabecalho{
+            background-color: green;
+            color: white;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22pt;
+        }
+
+        /* ===== ÁREA PRINCIPAL ===== */
+        #principal{
+            display: flex;
+            flex: 1;
+        }
+
+        /* ===== MENU LATERAL ===== */
+        #menu{
+            width: 180px;
+            background-color: #2bc223;
+            padding: 20px;
+        }
+
+        /* Classe dos links */
+        .link-menu{
+            display: block;
+            color: white;
+            text-decoration: none;
+            font-size: 16pt;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+        /* ===== CONTEÚDO ===== */
+        #conteudo{
+            flex: 1;
+            background-color: white;
+        }
+
+        /* Classe do iframe */
+        .quadro{
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* ===== RODAPÉ ===== */
+        #rodape{
+            background-color: green;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Classe do link externo */
+        .link-externo{
+            color: white;
+            text-decoration: none;
+            font-size: 15pt;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="layout">
+
+        <!-- Cabeçalho -->
+        <div id="cabecalho">
+            <h1>JOSÉ ADRIAN NASCIMENTO DA SILVA</h1>
+        </div>
+
+        <!-- Área principal -->
+        <div id="principal">
+
+            <!-- Menu -->
+            <div id="menu">
+
+                <a href="curriculo.html" target="quadro" class="link-menu">
+                    CURRÍCULO
+                </a>
+
+                <a href="tema_livre.html" target="quadro" class="link-menu">
+                    NEYMAR
+                </a>
+
+                <!-- Link externo -->
+                <a href="https://github.com/jans2-tftsf"
+                   target="_blank"
+                   class="link-menu">
+                    GitHub
+                </a>
+
+            </div>
+
+            <!-- Conteúdo -->
+            <div id="conteudo">
+
+                <iframe
+                    src="curriculo.html"
+                    name="quadro"
+                    title="Conteúdo principal"
+                    class="quadro">
+                </iframe>
+
+            </div>
+
+        </div>
+
+        <!-- Rodapé -->
+        <div id="rodape">
+
+            <a href="https://github.com/jans2-tftsf"
+               target="_blank"
+               class="link-externo">
+               GitHub Oficial
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
