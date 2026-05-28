@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Interativa</title>
+    <link rel="icon" type="image/x-icon" href="img/image.png">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+    body {
+        display: grid;
+        grid-template-columns: 25% 1fr;
+        grid-template-rows: auto 1fr auto;
+        gap: 5px;
+        height: 100vh;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-left: 10%;
+        margin-right: 10%;
+
+        background-color: rgb(126, 126, 126);
+    }
+
+    #cabecalho {
+        grid-column: 1 / span 2;
+        background-color: #000000;
+        text-align: center;
+        padding: 20px;
+        color: #ffffff;
+
+        font-family: 'Inter', sans-serif;
+    }
+
+    #ladinho {
+        background-color: #2e2e2e;
+        text-align: center;
+        color: #ffffff;
+        padding-top: 20px;
+    }
+
+    #meio {
+        background-color: #000000;
+        padding: 2%;
+    }
+
+    #rodape {
+        grid-column: 1 / span 2;
+        background-color: #000000;
+        text-align: center;
+        padding: 20px;
+        font-family: 'Inter', sans-serif;
+        color: #ffffff;
+    }
+
+    .textolado {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 12pt;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .element {
+        margin-bottom: 5px;
+        padding: 10px;
+    }
+
+    .list {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+
+
+
+</style>
+
+
+<body>
+
+    <div id="cabecalho">
+        <h1>Hub Interativo</h1>
+    </div>
+
+    <div id="ladinho">
+        <ul class="list">
+            <li class="element"><a href="curriculo.html" target="iframe" class="textolado" title="linkagemcomcurriculo">Currículo-Matheus</a></li>
+            <li><a href="aliceinchains.html" target="iframe" class="textolado" title="linkagemcomcurriculo">Alice in Chains</a></li>
+        </ul>
+    </div>
+
+    <div id="meio">
+        <iframe src="curriculo.html" name="iframe" style="border: none; width: 100%; height: 72vh; margin: 0; overflow-y: scroll; " title="Conteúdo" ></iframe>
+    </div>
+
+    <div id="rodape">
+        <p style="color: white; font-size: 12pt;">Contatos: mrls9@aluno.ifal.edu.br | @rwvthrdev</p>
+        <a href="https://github.com/rwvthrdev" style="color: white; text-decoration: none; font-weight: bold;" target="_blank" title="githubmeu">GitHub</a>
+    </div>
+    
+
+</body>
+
+</html>
