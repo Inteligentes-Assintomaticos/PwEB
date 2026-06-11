@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/layout.ico" type="image/x-icon">
     
-    <title>Layout</title>
+    <title>Páginas</title>
     
     
 <style>
@@ -46,7 +46,8 @@
     }
 
     #cabecalho {    /* Cabeçalho*/
-        /*Atualmente sem uso*/
+        padding: 20px;
+        text-align: center;
     }
 
     #rodape {   /* Rodapé*/
@@ -58,9 +59,9 @@
 
     .grid {             /* Latout do menu e conteúdo*/
         display: grid;  /* Tipo de display */
-        grid-template-columns: 0.3fr 2fr;   /* Divisão das colunas ➡️ para criar o menu lateral e deixar o espaço para o conteúdo */
+        grid-template-columns: 200px auto;   /* Divisão das colunas ➡️ para criar o menu lateral e deixar o espaço para o conteúdo */
 
-        grid-template-rows: 80vh;   /* Altura desse bloco*/
+        min-height: 80vh;                   /* Altura mínima ➡️ cresce se precisar*/
     }
     
 
@@ -85,19 +86,30 @@
         width: 90%;             /* Para não ocupar a linha toda*/ 
         
         font-size: 15pt;        /* Tamanho do texto*/
+        font-weight: 1000;
 
         border-bottom: 1px solid white; /* Boda embaixo do texto*/
-
         padding-bottom: 10px;   /* Espaço interno embaixo*/
 
         margin-top: 40px;       /* Para dar um espaço no topo*/
     }
 
-    #menu-lateral h2 {      /* Subtítulo*/
+    #menu-lateral button {      /* Subtítulo*/
+        align-self: flex-start; /* Para o elemento ocupar apenas o seu espaço*/
+
         font-size: 17pt;    /* Tamanho da fonte*/
         padding-left: 30px; /* Espaço interno a esquerda*/
 
         margin-bottom: 10px;    /* Para dar um espaço entre os links*/
+
+        color: white;         /* Cor do texto*/
+        font-weight: 1000;      /* Negrito*/
+        
+        background-color: transparent;  /* Fundo transparente*/
+        border: none;                   /* Remove bordas*/
+
+        cursor: pointer;                /* Modifica o ponteiro do cursor*/
+
     }
 
     #menu-lateral a {           /* Links do menu lateral*/
@@ -123,7 +135,11 @@
 
     <!-- CABEÇALHO -->
     <div id="cabecalho" class="layout">
-        <h1>FELIPE GABRIEL ARAÚJO DE FREITAS</h1>
+        <h1>
+            FELIPE GABRIEL ARAÚJO DE FREITAS <br>
+            MATHEUS RAMOS LIMA DA SILVA <br>
+            PAULO LÁZARO DA ROCHA SOUZA
+        </h1>
     </div>
 
 
@@ -133,21 +149,25 @@
         <!-- MENU LATERAL -->
         <div id="menu-lateral">
 
-            <h1>PÁGINAS</h1>
-            <br>
-            <h2><a href="./curriculo.htm" target="iframe">Currículo</a></h2>
-            <h2><a href="./tema_livre.htm" target="iframe">Player Tauz</a></h2>
+            <h1>PÁGINAS</h1> <br>
+
+            <button onclick="conteudo_fuction('curriculo.htm')">Currículo</button>
+            <button onclick="conteudo_fuction('tema_livre.htm')">Player Tauz</button>
 
         </div>
         
 
 
         <!-- CONTEÚDO -->
-        <div id="conteudo">
+        <div id="conteudo"></div>
 
-            <iframe name="iframe" title="Páginas" src="./curriculo.htm" frameborder="0" width="100%" height="100%"></iframe>
-            
-        </div>
+        <!-- script -->
+        <script>
+            async function conteudo_fuction(arquivo) {
+                document.getElementById('conteudo').innerHTML = await (await fetch(arquivo)).text()
+            }
+
+        </script>
 
     </div>
 
