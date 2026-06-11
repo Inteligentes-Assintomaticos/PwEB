@@ -1,0 +1,226 @@
+
+<!-- Felipe Gabriel Araújo de Freitas - 523 -->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/foto-curriculo.ico" type="image/x-icon">
+
+    <title>Currículo</title>
+
+
+<style>
+
+    body, html {
+        margin: 0;      /* Margens da página*/
+        height: auto;   /* Ajuste de altura automática*/
+
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   /* Fonte do texto*/
+
+        scrollbar-width: none;  /* Deixa o scroll invisível*/
+
+        color: white;   /* Cor do texto*/
+    }
+
+
+    /* ===TABELA=== */
+    
+    table {                             /* Tabela*/
+        border-collapse: collapse;      /* Para não deixar bordas duplicadas*/
+        
+        width: 95%;      /* Largura*/  
+        height: 50vh;    /* vh = definir altura de acordo com o tamanho da tela*/
+
+        margin: auto;       /* Ajuste automático das margens ➡ pra centralizar*/
+        margin-top: 30px;   /* Margem superior ➡ pra dar um espaço*/
+    }
+ 
+
+    tr {                            /* Linha*/
+        text-align: center;         /* Alinhar o texto horizontalmente no meio*/
+        vertical-align: middle;     /* Alinhar o texto verticamentel no meio*/
+    }
+
+
+
+    /* ===INFORMAÇÕES INICIAIS=== */
+
+    #informacoes_iniciais {     /* Primeira seção*/
+        display: flex;          /* Tipo de display*/
+        flex-direction: row;    /* Organização dos elementos em linha*/
+        
+        width: 95%;             /* Largura */
+        margin: auto;           /* Para centralizar */
+        margin-top: 30px;       /* Para dar um espaço no topo*/
+        
+        gap: 50px;              /* Espaço entre os elementos (imagem e texto)*/
+    }
+
+    #informacoes_iniciais p {   /* Parágrafos*/
+        margin: auto;           /* Para centralizar*/
+        width: 80%;             /* Largura*/
+    }
+
+
+    /* ===TABELA=== */
+
+    .titulo-e-rodape {                               /* Título*/
+        background-color:  #100E09;       /* Cor de fundo*/
+        border-bottom: 1px solid white;   /* Borda de baixo*/
+        
+        height: 50px;                       /* Altura*/
+    }
+
+    #titulo {   /* Títulos*/
+        /* Sem uso*/
+    }
+
+    
+    #rodape {       /* Rodapé*/
+        font-size: 20pt;
+    }
+
+    #rodape a {                 /* Link do rodapé*/
+        color: white;         /* Cor do texto*/
+    }   
+    
+
+    .linha-par {    /* Configuração de linha par*/
+        /* Atualmente nada*/
+    }
+
+    .linha-impar {                           /* Configuração de linha ímpar*/
+        background-color: #2e2e2e;          /* Cor de fundo*/
+    }
+
+
+    .bordas {                               /* Borda das linhas */
+        border-right: 1px solid white;    /* Borda direita*/
+        border-left: 1px solid white;     /* Borda esquerda*/
+    }
+
+    .separador {                            /* Separador entre as linhas*/
+        border-right: 1px solid white;    /* Separador para o lado direito*/
+        border-left: 1px solid white;     /* Separador para o lado esquerdo*/
+    }
+
+
+
+    #link-externo {
+        background-color: #100E09;      /* Cor de fundo*/
+
+        text-align: center;     /* Alinhamento do texto*/
+
+        margin: 50px 0px 50px 0px;
+        
+        width: 100%;            /* Largura*/
+        padding: 1px;          /* Espaço interno*/
+    }
+    
+</style>
+
+</head>
+
+<body>
+
+
+
+    <!-- Informações Iniciais -->
+
+    <div id="informacoes_iniciais">
+
+        <img title="foto currículo" src="./img/foto-curriculo.png"alt="foto do currículo" width="15%" height="auto">
+        
+
+        <p>Desenvolvedor web com experiência no desenvolvimento de interfaces e aplicações para a web, utilizando tecnologias como <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>. Habituado a boas práticas de desenvolvimento, versionamento com Git e criação de layouts responsivos. Em busca de oportunidade para consolidar a carreira e contribuir com projetos de impacto real.</p>
+
+    </div>
+
+
+
+
+
+    <!-- TABELA -->
+
+    <table width="100%" border="0">
+
+        <!-- Títulos -->
+        <tr class="titulo-e-rodape" id="titulo">
+
+            
+            <th></th>
+
+            <th>Formação</th>
+
+            <th>Cursos</th>
+            
+        </tr>
+
+        <!-- Desenvolvimento Front-End -->
+        <tr class="linha-impar bordas">
+
+            <th width="20%">Desenvolvimento Front-End</th>
+
+
+            <td class="separador" width="40%">Desenvolvimento Web / Bacharelado em Ciência da Computação</td>
+
+            <td>HTML, CSS e JavaScript (Alura, Rocketseat, DIO)</td>
+            
+        </tr>
+
+        <!-- Desenvolvimento Back-End-->
+        <tr class="linha-par bordas">
+
+            <th>Desenvolvimento Back-End</th>
+
+
+            <td class="separador">Bacharelado em Sistemas de Informação / Engenharia de Software</td>
+
+            <td>Node.js, Python com Django, PHP (Udemy, Coursera)</td>
+            
+        </tr>
+
+        <!-- Desenvolvimento Full Stack -->
+        <tr class="linha-impar bordas">
+
+            <th>Desenvolvimento Full Stack</th>
+
+
+            <td class="separador">Bacharelado em Engenharia de Software / Bootcamp Full Stack</td>
+
+            <td>Full Stack Web Development (Rocketseat, The Odin Project)</td>
+            
+        </tr>
+
+
+        <!-- Segurança em Aplicações Web -->
+        <tr class="linha-par bordas">
+
+            <th>Segurança em Aplicações Web</th>
+
+
+            <td class="separador">Bacharelado em Segurança da Informação / Ciência da Computação</td>
+
+            <td>OWASP, Ethical Hacking Web (Desec, Udemy)</td>
+                
+        </tr>
+
+
+        <!-- GitHub -->
+        <tr class="titulo-e-rodape bordas" id="rodape"
+        style="border-bottom: 1px solid white; /* Borda de baixo ➡️ para fechar a tabela*/">
+
+            <th colspan="3">
+                <a title="Meu Perfil GitHub" href="https://github.com/Felipe-dev7" target="_blank">Github</a>
+            </th>
+
+        </tr>
+        
+    </table>
+    
+
+</body>
+</html>

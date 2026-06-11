@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML</title>
+
+    
+</head>
+<body>
+
+
+<div id="conteudo1" style="background-color: aqua;"></div>
+
+<div id="conteudo2" style="background-color: burlywood;"></div>
+
+<div id="conteudo3" style="background-color: bisque;"></div>
+    
+
+
+
+<script>    // tem que ser depois dos blocos onde será colocado a informação
+
+    async function conteudo() { // função com os comandos
+                                // async: pede para o js esperar ➡️ leitura de arquivos demora
+        
+        document.getElementById('conteudo1').innerHTML = await (await fetch('conteudo1.htm')).text()
+
+        // document: na página inteira
+        // get: pegue
+        // Element: através do
+        // Id: ID
+        // innerHTML: serve para ler ou escrever
+        // await: pede para esperar ➡️ 1° await (dentro dos parênteses): espera o fetch ir e voltar com o arquivo | 2°await (fora dos parênteses): espera o arquivo bruto ser convertido em text
+        
+        document.getElementById('conteudo3').innerHTML = await (await fetch('conteudo3.htm')).text()
+
+    }
+
+    conteudo()  // chama a função
+
+</script>
+
+
+</body>
+</html>
