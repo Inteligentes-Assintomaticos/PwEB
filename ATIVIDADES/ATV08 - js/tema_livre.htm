@@ -23,7 +23,6 @@
         margin: auto;       /* Para centralizar*/
         margin-top: 30px;   /* Para dar um espaço no topo*/
         
-        gap: 50px;          /* Espaço entre os elementos (foto e texto)*/
     }
 
     #informacoes_iniciais p {
@@ -46,29 +45,22 @@
 
         text-align: center;     /* Alinhamento do texto*/
 
-        width: 100%;            /* Largura*/
+        width: auto;            /* Largura*/
         padding: 15px;          /* Espaço interno*/
     }
 
     #musica h2 a {
-        color: white;   /* Cor do texto*/
+        color: white;   /* Cor do link*/
     }
 
 
-    /* ===LAYOUT DE LETRA=== */
+    /* ===LAYOUT DA LETRA=== */
 
     .grid {             /* Letra da música*/
         display: grid;  /* Tipo de display*/
-        grid-template-columns: max-content max-content; /* Para separar em duas colunas usando o máximo de espaço disponível*/
+        grid-template-columns: auto auto;
         
-        margin: 40px auto;  /* Para dar um espaço no topo e centralizar horizontalmente*/
 
-        gap: 50px;          /* Para dar um espaço entre os itens*/
-        width: max-content; /* Para usar o máximo de largura possível*/
-
-        background-color: rgba(36,36,36,0.6);   /* Cor de fundo*/
-        padding: 30px;          /* Espaço interno*/
-        border-radius: 20px;    /* Para arredondar as bordas*/
     }
 
 
@@ -96,9 +88,7 @@
 
     <div class="grid">
     
-        <p style="border-right: 1px solid white; /* Borda na direita*/
-            padding-right: 35px;   /* Espaço interno ➡️ para deixar a linha (borda) mais pro lado*/
-            ">
+        <p>
         Bem-vindo ao Minecraft, meu amigo <br>
         Na jornada desse game, ficará surpreendido <br>
         Sinta liberdade para poder criar <br>
