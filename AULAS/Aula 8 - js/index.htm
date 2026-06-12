@@ -32,6 +32,7 @@
         // Id: ID
         // innerHTML: serve para ler ou escrever
         // await: pede para esperar ➡️ 1° await (dentro dos parênteses): espera o fetch ir e voltar com o arquivo | 2°await (fora dos parênteses): espera o arquivo bruto ser convertido em text
+        // fetch: vai e volta com o arquivo
         
         document.getElementById('conteudo3').innerHTML = await (await fetch('conteudo3.htm')).text()
 
