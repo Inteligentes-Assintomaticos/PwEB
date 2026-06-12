@@ -19,14 +19,14 @@
 
 
 
-<script>    // tem que ser depois dos blocos onde será colocado a informação
+<script>    // tem que ser depois dos blocos onde será colocado a informação ➡ caso contrário não funcionará, pois os blocos não estarão renderizados na página 
 
     async function conteudo() { // função com os comandos
                                 // async: pede para o js esperar ➡️ leitura de arquivos demora
         
         document.getElementById('conteudo1').innerHTML = await (await fetch('conteudo1.htm')).text()
 
-        // document: na página inteira
+        // document: fala para o js ler a página toda
         // get: pegue
         // Element: através do
         // Id: ID
