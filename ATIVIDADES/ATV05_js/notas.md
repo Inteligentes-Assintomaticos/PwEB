@@ -1,0 +1,6 @@
+- css em arquivo separado
+- site seguindo um padrão
+- comentários
+- mínimo de 4 classes 
+- <noscript>
+- DOCTYPE
