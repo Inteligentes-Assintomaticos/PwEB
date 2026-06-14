@@ -3,75 +3,94 @@
 
 
     /* !!! TEMPORÁRIO !!!*/
-    body, html, *{
+    body, html, * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-    }
 
-
-    body, html {
-        height: auto;       /* Altura da página*/
-        margin: 0;          /* Margens da página*/
-
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;       /* Fonte do texto*/
-
-        scrollbar-width: none;      /* Scroll invisível*/
-        color: white;             /* Cor do texto*/
-
-        background-color: #1c1c1c;
+        scrollbar-width: none;
     }
 
 
 
-    /* ===INFORMAÇÕES INICIAS=== */
-
-    #informacoes_iniciais {     /* Pega a primeira seção da página */
-        display: flex;          /* Tipo de display*/
-        flex-direction: row;    /* Para alinhar os elementos em uma linha*/
-        
-        width: 95%;         /* Largura*/
-        margin: auto;       /* Para centralizar*/
-        margin-top: 30px;   /* Para dar um espaço no topo*/
-        
-    }
-
-    #informacoes_iniciais p {
-        margin: auto;           /* Para ajustar o alinhamento do texto*/
-
-        width: 70%;             /* Para reduzir a largura e deixar o texto "empilhado"*/
-        text-align: justify;    /* Para deixar o texto justificado*/
-
-    }
 
 
-    /* ===MÚSICA=== */
-
-    #musica {               /* Seção com a letra da música*/
-        margin-top: 100px;  /* Para dar u espaço*/
-    }
-
-    #musica h2 {                          /* Título da seção*/
-        background-color: #100E09;      /* Cor de fundo*/
-
-        text-align: center;     /* Alinhamento do texto*/
-
-        width: auto;            /* Largura*/
-        padding: 15px;          /* Espaço interno*/
-    }
-
-    #musica h2 a {
-        color: white;   /* Cor do link*/
-    }
+    /* !!! USO DE '#tema_livre' PARA ISOLAR O CSS E EVITAR CONFLITOS AO INJETAR MO OUTRO HTML !!! */
 
 
-    /* ===LAYOUT DA LETRA=== */
-
-    .grid {             /* Letra da música*/
-        display: grid;  /* Tipo de display*/
-        grid-template-columns: auto auto;
+    #tema_livre {
+        display: flex;                  /* display*/
+        flex-direction: column;         /* direção dos elementos*/
+        min-height: 100vh;              /* ocupar a tela toda*/
         
 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   /* fonte do texto*/
+        scrollbar-width: none;                                          /* deixa o scroll invisível*/
+
+        color: white;                                                 /* cor do texto*/
+        background-color: #1c1c1c;                                    /* cor de fundo */
+    }
+
+
+    
+
+
+    /* INFORMAÇÕES INICIAS */
+    #tema_livre #informacoes_iniciais {     /* pega a primeira seção da página */
+        display: flex;                      /* tipo de display*/
+        flex-direction: row;                /* para alinhar os elementos em uma linha*/
+        
+        width: 95%;                         /* largura*/
+        margin: auto;                       /* para centralizar*/
+        margin-top: 30px;                   /* para dar um espaço no topo*/
+        
+    }
+
+    #tema_livre #informacoes_iniciais p {
+        margin: auto;           /* para ajustar o alinhamento do texto*/
+
+        width: 70%;             /* para reduzir a largura e deixar o texto "empilhado"*/
+        text-align: justify;    /* para deixar o texto justificado*/
+
+    }
+
+
+
+
+    /* MÚSICA*/
+    #tema_livre #musica {               /* seção com a letra da música*/
+        margin-top: 100px;              /* para dar um espaço*/
+    }
+
+
+    #tema_livre #musica h2, #tema_livre #musica a {                          /* título da seção*/
+        background-color: #100E09;                                         /* cor de fundo*/
+        color: inherit;                                                      /* cor do texto/link*/
+
+        text-align: center;                                                /* alinhamento do texto*/
+        width: auto;                                                       /* largura*/
+        padding: 15px;                                                     /* espaço interno*/
+    }
+
+
+
+    /* LETRA */
+    #tema_livre .letra {                        /* letra da música*/
+        display: grid;                          /* display*/
+        grid-template-columns: auto auto;       /* cria duas tabelas de mesmo tamanho*/
+
+        justify-content: center;                /* alinhamento horizontal*/
+        align-content: center;                  /* alinhamento vertical*/
+        gap: 100px;                             /* espaço entre os elementos*/
+
+        min-height: 100vh;                      /* ocupar a tela inteira*/
+    }
+
+    #tema_livre .letra p {
+        background-color: rgba(0, 0, 0, 0.29);
+
+        padding: 20px;
+        border-radius: 20px;
     }
 
 
@@ -80,89 +99,92 @@
  
 <div id="tema_livre">
 
-<div id="informacoes_iniciais">
+    <!-- INFORMAÇÕES INCIAIS -->
+    <div id="informacoes_iniciais">
 
-    <img title="foto player tauz" src="./img/tauz.png"alt="foto do player tauz" width="auto" height="200px">
+        <img title="foto player tauz" src="./img/tauz.png"alt="foto do player tauz" width="auto" height="200px">
 
-    <p>O Player Tauz é um dos principais nomes do rap geek no Brasil, conhecido por transformar universos de jogos, animes e filmes em músicas cheias de narrativa e emoção. Ele começou sua trajetória no <strong>YouTube</strong> por volta de 2013, em uma época em que o conteúdo voltado para cultura nerd ainda estava crescendo no país. Com o tempo, Tauz conquistou um público fiel ao unir batidas modernas com letras que exploram sentimentos, conflitos e histórias de personagens famosos.
+        <p>O Player Tauz é um dos principais nomes do rap geek no Brasil, conhecido por transformar universos de jogos, animes e filmes em músicas cheias de narrativa e emoção. Ele começou sua trajetória no <strong>YouTube</strong> por volta de 2013, em uma época em que o conteúdo voltado para cultura nerd ainda estava crescendo no país. Com o tempo, Tauz conquistou um público fiel ao unir batidas modernas com letras que exploram sentimentos, conflitos e histórias de personagens famosos.
 
-    <br> <br>
-        
-    Grande parte do seu sucesso também está ligada a parcerias com o grupo <strong>7 Minutoz</strong>, que ajudou a consolidar o <q>rap geek</q> como um gênero relevante no Brasil. Juntos, eles criaram músicas que viralizaram e marcaram uma geração de fãs de games e cultura pop. O diferencial de Tauz sempre foi sua capacidade de ir além de batalhas e ação, trazendo reflexões mais profundas dentro de universos fictícios. A seguir uma de suas obras mais conhecidas, <q>Rap do Minecraft</q>.</p>
-
-</div>
-
-
-<div id="musica">
-
-    <h2>
-        <a title="Rap do Minecraft" href="https://youtu.be/LVMHYzVS9Y4" target="_blank">RAP DO MINECRAFT</a>
-    </h2>
-
-    <div class="grid">
-    
-        <p>
-        Bem-vindo ao Minecraft, meu amigo <br>
-        Na jornada desse game, ficará surpreendido <br>
-        Sinta liberdade para poder criar <br>
-        Apenas qualquer coisa que poder imaginar <br>
-        Modo criativo ou sobrevivência <br>
-        Em uma aventura, tenha sua experiência <br>
-        Nem preciso dizer o que se pode ou não fazer <br>
-        Faça o que quiser e verá acontecer <br>
-        Construindo e minerando sem nenhuma trajetória <br>
-        Sem ao menos perceber, vou fazendo minha história <br>
-        Neste universo realmente impressionante <br>
-        Explorando cavernas a procura de diamantes <br>
-        Combinando itens, construindo casas <br>
-        De dia ou de noite, fazendo minha jornada <br>
-        Modificações aumentam a diversidade <br>
-        E fica ainda mais legal com os amigos de verdade <br> <br>
-
-        Yeah, Minecraft, é <br>
-        Você conhece! <br>
-        Num mundo de blocos, faço qualquer criação <br>
-        Onde o único limite é a imaginação <br>
-        (Yeah!) <br>
-        Minecraft, é <br>
-        Você conhece! <br>
-        Num mundo de blocos, faço qualquer criação <br>
-        Onde o único limite é a imaginação <br>
-        Yeah
-        </p>
-
-
-        <p>
-        Quando cai a noite, é preciso ter cuidado <br>
-        Pode aparecer mobs por todo lado <br>
-        Esqueleto, Zumbi, Aranha ou Creeper <br>
-        Tenha coragem para invocar o Wither <br>
-        Não olhe nos olhos de um Enderman <br>
-        Assim como o Slender, te persegue também <br>
-        Mas o que mais assusta é a lenda desse game <br>
-        Herobrine, esse aí é diferente <br>
-        Sua existência é um grande mistério <br>
-        Tudo que se fala pode ou não estar correto <br>
-        Realmente Minecraft é incomparável <br>
-        Nunca nada semelhante tinha sido criado <br>
-        Recorde de vendas, grande inspiração <br>
-        Alcançando os da antiga e da nova geração <br>
-        Vai falar de gráfico? Mano, dá um tempo <br>
-        Ninguém nunca reclamou de jogar Super Nintendo! <br> <br>
-
-        Yeah, Minecraft, é <br>
-        Você conhece <br>
-        Num mundo de blocos, faço qualquer criação <br>
-        Onde o único limite é a imaginação <br>
-        (Yeah!) <br>
-        Minecraft, é <br>
-        Você conhece! <br>
-        Num mundo de blocos, faço qualquer criação <br>
-        Onde o único limite é a imaginação
-        </p>
+        <br> <br>
+            
+        Grande parte do seu sucesso também está ligada a parcerias com o grupo <strong>7 Minutoz</strong>, que ajudou a consolidar o <q>rap geek</q> como um gênero relevante no Brasil. Juntos, eles criaram músicas que viralizaram e marcaram uma geração de fãs de games e cultura pop. O diferencial de Tauz sempre foi sua capacidade de ir além de batalhas e ação, trazendo reflexões mais profundas dentro de universos fictícios. A seguir uma de suas obras mais conhecidas, <q>Rap do Minecraft</q>.</p>
 
     </div>
 
-</div>
-    
+
+    <!-- MÚSICA     -->
+    <div id="musica">
+
+        <h2>
+            <a title="Rap do Minecraft" href="https://youtu.be/LVMHYzVS9Y4" target="_blank">RAP DO MINECRAFT</a>
+        </h2>
+
+        <!-- LETRA -->
+        <div class="letra">
+        
+            <p>
+            Bem-vindo ao Minecraft, meu amigo <br>
+            Na jornada desse game, ficará surpreendido <br>
+            Sinta liberdade para poder criar <br>
+            Apenas qualquer coisa que poder imaginar <br>
+            Modo criativo ou sobrevivência <br>
+            Em uma aventura, tenha sua experiência <br>
+            Nem preciso dizer o que se pode ou não fazer <br>
+            Faça o que quiser e verá acontecer <br>
+            Construindo e minerando sem nenhuma trajetória <br>
+            Sem ao menos perceber, vou fazendo minha história <br>
+            Neste universo realmente impressionante <br>
+            Explorando cavernas a procura de diamantes <br>
+            Combinando itens, construindo casas <br>
+            De dia ou de noite, fazendo minha jornada <br>
+            Modificações aumentam a diversidade <br>
+            E fica ainda mais legal com os amigos de verdade <br> <br>
+
+            Yeah, Minecraft, é <br>
+            Você conhece! <br>
+            Num mundo de blocos, faço qualquer criação <br>
+            Onde o único limite é a imaginação <br>
+            (Yeah!) <br>
+            Minecraft, é <br>
+            Você conhece! <br>
+            Num mundo de blocos, faço qualquer criação <br>
+            Onde o único limite é a imaginação <br>
+            Yeah
+            </p>
+
+
+            <p>
+            Quando cai a noite, é preciso ter cuidado <br>
+            Pode aparecer mobs por todo lado <br>
+            Esqueleto, Zumbi, Aranha ou Creeper <br>
+            Tenha coragem para invocar o Wither <br>
+            Não olhe nos olhos de um Enderman <br>
+            Assim como o Slender, te persegue também <br>
+            Mas o que mais assusta é a lenda desse game <br>
+            Herobrine, esse aí é diferente <br>
+            Sua existência é um grande mistério <br>
+            Tudo que se fala pode ou não estar correto <br>
+            Realmente Minecraft é incomparável <br>
+            Nunca nada semelhante tinha sido criado <br>
+            Recorde de vendas, grande inspiração <br>
+            Alcançando os da antiga e da nova geração <br>
+            Vai falar de gráfico? Mano, dá um tempo <br>
+            Ninguém nunca reclamou de jogar Super Nintendo! <br> <br>
+
+            Yeah, Minecraft, é <br>
+            Você conhece <br>
+            Num mundo de blocos, faço qualquer criação <br>
+            Onde o único limite é a imaginação <br>
+            (Yeah!) <br>
+            Minecraft, é <br>
+            Você conhece! <br>
+            Num mundo de blocos, faço qualquer criação <br>
+            Onde o único limite é a imaginação
+            </p>
+
+        </div>
+
+    </div>
+        
 </div>
