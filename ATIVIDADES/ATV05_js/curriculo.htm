@@ -14,9 +14,11 @@
     }
     
 
+    /* !!! USO DE '#curriculo' PARA ISOLAR O CSS E EVITAR CONFLITOS AO INJETAR MO OUTRO HTML !!! */
+
 
     /* PÁGINA */
-    #pagina {
+    #curriculo {
         display: flex;
         flex-direction: column;
         height: 100vh;
@@ -30,13 +32,13 @@
     }
 
 
-    #conteudo {
+    #curriculo #conteudo {
         /* sem uso*/
     }
     
 
     /* INFORMAÇÕES INICIAIS */
-    #informacoes_iniciais {     /* primeira seção*/
+    #curriculo #informacoes_iniciais {     /* primeira seção*/
         display: flex;          /* tipo de display*/
         flex-direction: row;    /* organização dos elementos em linha*/
         
@@ -49,7 +51,7 @@
     
     
 
-    #informacoes_iniciais p {   /* parágrafos*/
+    #curriculo #informacoes_iniciais p {   /* parágrafos*/
         margin: auto;           /* para centralizar*/
         width: 80%;             /* largura*/
     }
@@ -59,7 +61,7 @@
 
 
     /* TABELA */
-    table {                             /* tabela*/
+    #curriculo table {                             /* tabela*/
         color: inherit;                 /* herda a cor do bloco pai*/
         
         border-collapse: collapse;      /* para não deixar bordas duplicadas*/
@@ -72,14 +74,14 @@
     }
  
 
-    tr {                            /* linha*/
+    #curriculo tr {                            /* linha*/
         text-align: center;         /* alinhar o texto horizontalmente no meio*/
         vertical-align: middle;     /* alinhar o texto verticamentel no meio*/
     }
 
 
 
-   #titulo {                        /* título*/
+   #curriculo #titulo {                        /* título*/
         background-color:  #100E09;       /* cor de fundo*/
         border-bottom: 1px solid white;   /* borda de baixo*/
         
@@ -89,23 +91,23 @@
     
     
 
-    .linha-par {                            /* configuração de linha par*/
+    #curriculo .linha-par {                            /* configuração de linha par*/
         /* Atualmente nada*/
     }
 
-    .linha-impar {                           /* configuração de linha ímpar*/
+    #curriculo .linha-impar {                           /* configuração de linha ímpar*/
         background-color: #2e2e2e;         /* cor de fundo*/
     }
 
 
 
-    .bordas {                               /* borda das linhas */
+    #curriculo .bordas {                               /* borda das linhas */
         border-right: 1px solid white;    /* borda direita*/
         border-left: 1px solid white;     /* borda esquerda*/
     }
 
 
-    .separador {                            /* separador entre as linhas*/
+    #curriculo .separador {                            /* separador entre as linhas*/
         border-right: 1px solid white;    /* separador para o lado direito*/
         border-left: 1px solid white;     /* separador para o lado esquerdo*/
     }
@@ -114,23 +116,23 @@
 
 
     /* RODAPÉ */
-    #rodape {
+    #curriculo #rodape, #curriculo #rodape a {
         text-align: center;                 /* texto no centro*/
         
         background-color: #100E09;        /* cor de fundo*/
         padding: 20px;                      /* espaço interno*/
         margin-top: 30px;                   /* margem superior*/
-    }
 
-    #rodape a {             /* link do rodapé*/
-        color: inherit;     /* herda a cor do bloco pai*/
-    }  
+
+
+        color: inherit;                     /* cor do texto/link*/
+    }
     
     
 </style>
 
 
-<div id="pagina">
+<div id="curriculo">
 
     <div id="conteudo">
 
