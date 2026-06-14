@@ -1,5 +1,9 @@
 
-<!-- Felipe Gabriel Araújo de Freitas - 523 -->
+<!-- ALUNOS - 523 -->
+<!-- Felipe Gabriel Araújo de Freitas -->
+<!-- Matheus Ramos Lima da Silva -->
+<!-- Paulo Lázaro da Rocha Souza -->
+    
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -8,10 +12,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/layout.ico" type="image/x-icon">
     
-    <title>Páginas</title>
+    <title>TRIO DEVS</title>
     
     
 <style>
+
+
 
     * {                             /* para zerar a estilização do navegador*/
         margin: 0;
@@ -23,16 +29,9 @@
     }
 
 
-    /* !!!!!!!!!!! */
-    html, body {
-        height: auto;   /* altura */
-        margin: 0;      /* margens zerada*/
-        padding: 0;     /* espaço interno zerado*/
-        color: white; /* cor do texto*/
+    body, html {
+        background-color: #2f3030;      /* cor de fundo*/
     }
-
-
-
 
 
     /* PÁGINA */
@@ -42,15 +41,16 @@
         
         margin: 30px auto;      /* margens da tabela ➡ 30px top e bottom e auto para right e left*/
         
-        width: 95%;     /* largura */
-        height: 100%;   /* altura */
+        width: 95%;             /* largura*/
+
+        color: white;         /* cor do texto*/
     }
 
 
 
 
     /* CABEÇALHO E RODAPÉ */
-    .cabecalho_rodape {             /* cor e altura do cabeçalho e do rodapé*/
+    #pagina .cabecalho_rodape {             /* cor e altura do cabeçalho e do rodapé*/
         display: flex;              /* display*/
         justify-content: center;    /* centraliza horizontalmente*/
         align-items: center;        /* centraliza verticalmente */
@@ -61,12 +61,11 @@
 
 
 
-    #cabecalho {            /* cabeçalho*/
-        padding: 20px;
-        text-align: center;
+    #pagina #cabecalho {            /* cabeçalho*/
+        /* sem uso*/
     }
 
-    #rodape {               /* rodapé*/
+    #pagina #rodape {               /* rodapé*/
         /* atualmente sem uso*/
     }
 
@@ -75,7 +74,7 @@
 
 
     /* MENU E CONTEÚDO */
-    .menu_conteudo {
+    #pagina .menu_conteudo {
         display: grid;                          /* display */
         grid-template-columns: 200px auto;      /* divisão das colunas ➡️ para criar o menu lateral e deixar o espaço para o conteúdo */
 
@@ -85,7 +84,7 @@
 
 
     /* MENU LATERAL*/
-    #menu {
+    #pagina #menu {
         display: flex;          /* display*/
         flex-direction: column; /* direção dos elementos ➡️ um abaixo do outro*/
         justify-content: left;  /* alinha a esquerda*/
@@ -93,33 +92,35 @@
         
         background-color: #292828;  /* cor de fundo*/
 
-        padding-left: 10px; /* espaço interno a esquerda*/
-        padding-top: 10px;  /* espaço interno emcima*/
+        padding-left: 20px;           /* espaço interno a esquerda*/
+        padding-top: 30px;            /* espaço interno em cima*/
     }
 
-    #menu h1 {                      /* título*/
+
+    #menu h1 {                      /* títulos*/
         align-self: flex-start;     /* para o elemento ocupar apenas o seu espaço*/
         width: 90%;                 /* para não ocupar a linha toda*/ 
         
-        font-size: 15pt;            /* tamanho do texto*/
-        font-weight: 1000;          /* texto mais gordo ➡ negrito*/
+        font-size: 20pt;            /* tamanho do texto*/
+        font-weight: bold;          /* texto mais gordo ➡ negrito*/
 
-        border-bottom: 1px solid white;     /* boda embaixo do texto*/
-        padding-bottom: 10px;                 /* espaço interno embaixo*/
+        border-bottom: 3px solid white;     /* boda embaixo do texto*/
+        padding-bottom: 5px;                 /* espaço interno embaixo*/
 
-        margin-top: 40px;                     /* para dar um espaço no topo*/
-    }
+        margin-top: 20px;                     /* para dar um espaço no topo*/
+    }    
 
-    #menu-lateral button {          /* botões*/
+
+
+    #pagina #menu button {          /* botões*/
         align-self: flex-start;     /* para o elemento ocupar apenas o seu espaço*/
 
         font-size: 17pt;            /* tamanho da fonte*/
-        padding-left: 30px;         /* espaço interno a esquerda*/
 
         margin-bottom: 10px;        /* para dar um espaço entre os botões*/
 
         color: white;             /* cor do texto*/
-        font-weight: 1000;          /* negrito*/
+        font-weight: bold;          /* negrito*/
         
         background-color: transparent;  /* fundo transparente*/
         border: none;                   /* remove bordas*/
@@ -131,7 +132,7 @@
 
 
     /* CONTEÚDO */
-    #conteudo {
+    #pagina #conteudo {
         background-color: #1c1c1c;  /* cor de fundo*/
     }
 
@@ -146,11 +147,9 @@
 
     <!-- CABEÇALHO -->
     <div id="cabecalho" class="cabecalho_rodape">
-        <h1>
-            FELIPE GABRIEL ARAÚJO DE FREITAS <br>
-            MATHEUS RAMOS LIMA DA SILVA <br>
-            PAULO LÁZARO DA ROCHA SOUZA
-        </h1>
+
+        <h1 id="titulo_cabecalho">TRIO DEVS</h1>
+        
     </div>
 
 
@@ -160,22 +159,48 @@
         <!-- MENU LATERAL -->
         <div id="menu">
 
-            <h1>PÁGINAS</h1> <br>
+            <button onclick="voltar_capa()">INÍCIO</button>
 
-            <button onclick="conteudo_fuction('curriculo.htm')">Currículo</button>
-            <button onclick="conteudo_fuction('tema_livre.htm')">Player Tauz</button>
+            <h1>FELIPE</h1> <br>
+            <button onclick="conteudo_fuction('curriculo_felipe.htm', 'FELIPE')">Currículo</button>
+            <button onclick="conteudo_fuction('tema-livre_felipe.htm', 'FELIPE')">Player Tauz</button>
 
+
+            <h1>MATHEUS</h1> <br>
+            <button onclick="conteudo_fuction('curriculo_matheus.htm', 'MATHEUS')">Currículo</button>
+            <button onclick="conteudo_fuction('tema-livre_matheus.htm','MATHEUS')">tema livre</button>
+
+
+            <h1>PAULO</h1> <br>
+            <button onclick="conteudo_fuction('curriculo_paulo.htm', 'PAULO')">Currículo</button>
+            <button onclick="conteudo_fuction('tema-livre_paulo.htm', 'PAULO')">tema livre</button>
+        
         </div>
         
 
 
         <!-- CONTEÚDO -->
-        <div id="conteudo"></div>
+        <div id="conteudo">
+
+            
+        </div>
 
         <!-- script -->
         <script>
-            async function conteudo_fuction(arquivo) {
+
+            // função para mudar o conteúdo
+            async function conteudo_fuction(arquivo, nome) {
                 document.getElementById('conteudo').innerHTML = await (await fetch(arquivo)).text()
+                document.getElementById('titulo_cabecalho').innerHTML = nome
+            }
+
+
+            // para voltar para a capa
+            const capa = document.getElementById('conteudo').innerHTML      // armazena
+
+            function voltar_capa() {
+                document.getElementById('conteudo').innerHTML = capa
+                document.getElementById('titulo_cabecalho').innerHTML = 'TRIO DEVS'
             }
 
         </script>
