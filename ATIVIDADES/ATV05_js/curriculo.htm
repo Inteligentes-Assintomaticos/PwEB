@@ -1,208 +1,238 @@
 
+<!-- ALUNOS - 523 -->
+
+
+
+
 <style>
 
-    body, html {
-        margin: 0;      /* Margens da página*/
-        height: auto;   /* Ajuste de altura automática*/
+    /* !!! TEMPORÁRIO !!!*/
+    body, html, *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
 
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   /* Fonte do texto*/
 
-        scrollbar-width: none;  /* Deixa o scroll invisível*/
+    /* PÁGINA */
+    #pagina {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        
 
-        color: white;   /* Cor do texto*/
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   /* fonte do texto*/
+        scrollbar-width: none;                                          /* deixa o scroll invisível*/
+
+        color: white;                                                 /* cor do texto*/
+        background-color: #1c1c1c;                                    /* cor de fundo */
     }
 
 
-    /* ===TABELA=== */
+    #conteudo {
+        /* sem uso*/
+    }
     
-    table {                             /* Tabela*/
-        border-collapse: collapse;      /* Para não deixar bordas duplicadas*/
-        
-        width: 95%;      /* Largura*/  
-        height: 50vh;    /* vh = definir altura de acordo com o tamanho da tela*/
 
-        margin: auto;       /* Ajuste automático das margens ➡ pra centralizar*/
-        margin-top: 30px;   /* Margem superior ➡ pra dar um espaço*/
+    /* INFORMAÇÕES INICIAIS */
+    #informacoes_iniciais {     /* primeira seção*/
+        display: flex;          /* tipo de display*/
+        flex-direction: row;    /* organização dos elementos em linha*/
+        
+        width: 95%;             /* largura */
+        margin: auto;           /* para centralizar */
+        margin-top: 30px;       /* para dar um espaço no topo*/
+        
+        gap: 50px;              /* espaço entre os elementos (imagem e texto)*/
+    }
+    
+    
+
+    #informacoes_iniciais p {   /* parágrafos*/
+        margin: auto;           /* para centralizar*/
+        width: 80%;             /* largura*/
+    }
+
+
+
+
+
+    /* TABELA */
+    table {                             /* tabela*/
+        color: inherit;                 /* herda a cor do bloco pai*/
+        
+        border-collapse: collapse;      /* para não deixar bordas duplicadas*/
+        
+        width: 95%;                    /* largura*/  
+        height: 50vh;                  /* vh = definir altura de acordo com o tamanho da tela*/
+
+        margin: auto;                  /* ajuste automático das margens ➡ pra centralizar*/
+        margin-top: 30px;              /* margem superior ➡ pra dar um espaço*/
     }
  
 
-    tr {                            /* Linha*/
-        text-align: center;         /* Alinhar o texto horizontalmente no meio*/
-        vertical-align: middle;     /* Alinhar o texto verticamentel no meio*/
+    tr {                            /* linha*/
+        text-align: center;         /* alinhar o texto horizontalmente no meio*/
+        vertical-align: middle;     /* alinhar o texto verticamentel no meio*/
     }
 
 
 
-    /* ===INFORMAÇÕES INICIAIS=== */
-
-    #informacoes_iniciais {     /* Primeira seção*/
-        display: flex;          /* Tipo de display*/
-        flex-direction: row;    /* Organização dos elementos em linha*/
+   #titulo {                        /* título*/
+        background-color:  #100E09;       /* cor de fundo*/
+        border-bottom: 1px solid white;   /* borda de baixo*/
         
-        width: 95%;             /* Largura */
-        margin: auto;           /* Para centralizar */
-        margin-top: 30px;       /* Para dar um espaço no topo*/
-        
-        gap: 50px;              /* Espaço entre os elementos (imagem e texto)*/
-    }
-
-    #informacoes_iniciais p {   /* Parágrafos*/
-        margin: auto;           /* Para centralizar*/
-        width: 80%;             /* Largura*/
-    }
-
-
-
-    /* ===TABELA=== */
-
-    .titulo-e-rodape {                               /* Título*/
-        background-color:  #100E09;       /* Cor de fundo*/
-        border-bottom: 1px solid white;   /* Borda de baixo*/
-        
-        height: 50px;                       /* Altura*/
-    }
-
-    #titulo {   /* Títulos*/
-        /* Sem uso*/
+        height: 50px;                       /* altura*/
     }
 
     
-    #rodape {       /* Rodapé*/
-        font-size: 20pt;
-    }
-
-    #rodape a {                 /* Link do rodapé*/
-        color: white;         /* Cor do texto*/
-    }   
     
 
-    .linha-par {    /* Configuração de linha par*/
+    .linha-par {                            /* configuração de linha par*/
         /* Atualmente nada*/
     }
 
-    .linha-impar {                           /* Configuração de linha ímpar*/
-        background-color: #2e2e2e;          /* Cor de fundo*/
-    }
-
-
-    .bordas {                               /* Borda das linhas */
-        border-right: 1px solid white;    /* Borda direita*/
-        border-left: 1px solid white;     /* Borda esquerda*/
-    }
-
-    .separador {                            /* Separador entre as linhas*/
-        border-right: 1px solid white;    /* Separador para o lado direito*/
-        border-left: 1px solid white;     /* Separador para o lado esquerdo*/
+    .linha-impar {                           /* configuração de linha ímpar*/
+        background-color: #2e2e2e;         /* cor de fundo*/
     }
 
 
 
-    #link-externo {
-        background-color: #100E09;      /* Cor de fundo*/
+    .bordas {                               /* borda das linhas */
+        border-right: 1px solid white;    /* borda direita*/
+        border-left: 1px solid white;     /* borda esquerda*/
+    }
 
-        text-align: center;     /* Alinhamento do texto*/
 
-        margin: 50px 0px 50px 0px;
+    .separador {                            /* separador entre as linhas*/
+        border-right: 1px solid white;    /* separador para o lado direito*/
+        border-left: 1px solid white;     /* separador para o lado esquerdo*/
+    }
+
+
+
+
+    /* RODAPÉ */
+    #rodape {
+        text-align: center;                 /* texto no centro*/
         
-        width: 100%;            /* Largura*/
-        padding: 1px;          /* Espaço interno*/
+        background-color: #100E09;        /* cor de fundo*/
+        padding: 20px;                      /* espaço interno*/
+        margin-top: 30px;                   /* margem superior*/
     }
+
+    #rodape a {             /* link do rodapé*/
+        color: inherit;     /* herda a cor do bloco pai*/
+    }  
+    
     
 </style>
 
 
+<div id="pagina">
 
+    <div id="conteudo">
 
-<!-- Informações Iniciais -->
+        <!-- INFORMAÇÕES INCIAIS -->
 
-<div id="informacoes_iniciais">
+        <div id="informacoes_iniciais">
 
-    <img title="foto currículo" src="./img/foto-curriculo.png"alt="foto do currículo" width="auto" height="200px">
-    
-
-    <p>Desenvolvedor web com experiência no desenvolvimento de interfaces e aplicações para a web, utilizando tecnologias como <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>. Habituado a boas práticas de desenvolvimento, versionamento com Git e criação de layouts responsivos. Em busca de oportunidade para consolidar a carreira e contribuir com projetos de impacto real.</p>
-
-</div>
-
-
-
-
-
-<!-- TABELA -->
-
-<table width="100%" border="0">
-
-    <!-- Títulos -->
-    <tr class="titulo-e-rodape" id="titulo">
-
-        
-        <th></th>
-
-        <th>Formação</th>
-
-        <th>Cursos</th>
-        
-    </tr>
-
-    <!-- Desenvolvimento Front-End -->
-    <tr class="linha-impar bordas">
-
-        <th width="20%">Desenvolvimento Front-End</th>
-
-
-        <td class="separador" width="40%">Desenvolvimento Web / Bacharelado em Ciência da Computação</td>
-
-        <td>HTML, CSS e JavaScript (Alura, Rocketseat, DIO)</td>
-        
-    </tr>
-
-    <!-- Desenvolvimento Back-End-->
-    <tr class="linha-par bordas">
-
-        <th>Desenvolvimento Back-End</th>
-
-
-        <td class="separador">Bacharelado em Sistemas de Informação / Engenharia de Software</td>
-
-        <td>Node.js, Python com Django, PHP (Udemy, Coursera)</td>
-        
-    </tr>
-
-    <!-- Desenvolvimento Full Stack -->
-    <tr class="linha-impar bordas">
-
-        <th>Desenvolvimento Full Stack</th>
-
-
-        <td class="separador">Bacharelado em Engenharia de Software / Bootcamp Full Stack</td>
-
-        <td>Full Stack Web Development (Rocketseat, The Odin Project)</td>
-        
-    </tr>
-
-
-    <!-- Segurança em Aplicações Web -->
-    <tr class="linha-par bordas">
-
-        <th>Segurança em Aplicações Web</th>
-
-
-        <td class="separador">Bacharelado em Segurança da Informação / Ciência da Computação</td>
-
-        <td>OWASP, Ethical Hacking Web (Desec, Udemy)</td>
+            <img title="foto currículo" src="./img/foto-curriculo.png"alt="foto do currículo" width="auto" height="200px">
             
-    </tr>
+
+            <p>Desenvolvedor web com experiência no desenvolvimento de interfaces e aplicações para a web, utilizando tecnologias como <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>. Habituado a boas práticas de desenvolvimento, versionamento com Git e criação de layouts responsivos. Em busca de oportunidade para consolidar a carreira e contribuir com projetos de impacto real.</p>
+
+        </div>
 
 
-    <!-- GitHub -->
-    <tr class="titulo-e-rodape bordas" id="rodape"
-    style="border-bottom: 1px solid white; /* Borda de baixo ➡️ para fechar a tabela*/">
 
-        <th colspan="3">
-            <a title="Meu Perfil GitHub" href="https://github.com/Felipe-dev7" target="_blank">Github</a>
-        </th>
 
-    </tr>
-    
-</table>
-    
+        <!-- TABELA -->
+
+        <table width="100%" border="0">
+
+            <!-- Títulos -->
+            <tr id="titulo">
+
+                
+                <th></th>
+
+                <th>Formação</th>
+
+                <th>Cursos</th>
+                
+            </tr>
+
+
+
+
+            <!-- Desenvolvimento Front-End -->
+            <tr class="linha-impar bordas">
+
+                <th width="20%">Desenvolvimento Front-End</th>
+
+
+                <td class="separador" width="40%">Desenvolvimento Web / Bacharelado em Ciência da Computação</td>
+
+                <td>HTML, CSS e JavaScript (Alura, Rocketseat, DIO)</td>
+                
+            </tr>
+
+
+
+            <!-- Desenvolvimento Back-End-->
+            <tr class="linha-par bordas">
+
+                <th>Desenvolvimento Back-End</th>
+
+
+                <td class="separador">Bacharelado em Sistemas de Informação / Engenharia de Software</td>
+
+                <td>Node.js, Python com Django, PHP (Udemy, Coursera)</td>
+                
+            </tr>
+
+
+
+            <!-- Desenvolvimento Full Stack -->
+            <tr class="linha-impar bordas">
+
+                <th>Desenvolvimento Full Stack</th>
+
+
+                <td class="separador">Bacharelado em Engenharia de Software / Bootcamp Full Stack</td>
+
+                <td>Full Stack Web Development (Rocketseat, The Odin Project)</td>
+                
+            </tr>
+
+
+
+            <!-- Segurança em Aplicações Web -->
+            <tr class="linha-par bordas"
+            style="border-bottom: 1px solid white; /* borda de baixo ➡️ para fechar a tabela*/">
+
+                <th>Segurança em Aplicações Web</th>
+
+
+                <td class="separador">Bacharelado em Segurança da Informação / Ciência da Computação</td>
+
+                <td>OWASP, Ethical Hacking Web (Desec, Udemy)</td>
+                    
+            </tr>
+            
+        </table>
+
+    </div>
+
+
+    <!-- RODAPÉ -->
+    <div id="rodape">
+        <h2>
+            <a title="Meu GitHub" href="https://github.com/Felipe-dev7" target="_blank">GITHUB</a>
+        </h2>
+    </div>
+
+        
+</div>

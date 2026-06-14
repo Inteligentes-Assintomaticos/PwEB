@@ -13,115 +13,123 @@
     
 <style>
 
-    
+    * {                             /* para zerar a estilização do navegador*/
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    /* !!!!!!!!!!! */
     html, body {
-        height: auto;   /* Altura */
-        margin: 0;      /* Margens zerada*/
-        padding: 0;     /* Espaço interno zerado*/
-        color: white; /* Cor do texto*/
+        height: auto;   /* altura */
+        margin: 0;      /* margens zerada*/
+        padding: 0;     /* espaço interno zerado*/
+        color: white; /* cor do texto*/
     }
 
 
-    /* ===LAYOUT=== */
 
-    #layout {                   /* Para*/        
-        display: flex;          /* Tipo de display*/
-        flex-direction: column; /* Direção dos elementos ➡️ em coluna (um abaixo do outro)*/
+
+
+    /* PÁGINA */
+    #pagina {     
+        display: flex;          /* display*/
+        flex-direction: column; /* direção dos elementos ➡️ em coluna (um abaixo do outro)*/
         
-        margin: 30px auto;      /* Margens da tabela ➡ 30px top e bottom e auto para right e left*/
+        margin: 30px auto;      /* margens da tabela ➡ 30px top e bottom e auto para right e left*/
         
-        width: 95%;     /* Largura */
-        height: 100%;   /* Altura */
+        width: 95%;     /* largura */
+        height: 100%;   /* altura */
     }
 
-    /* ===LAYOU DE CABEÇALHO E RODAPÉ=== */
 
-    .layout {                             /* Cor e altura do cabeçalho e do rodapé*/
-        display: flex;              /* Tipo de display*/
-        justify-content: center;    /* Centraliza horizontalmente*/
-        align-items: center;        /* Centraliza verticalmente */
 
-        background-color: #100E09;      /* Cor de fundo*/
-        height: 100px;                    /* Altura*/
+
+    /* CABEÇALHO E RODAPÉ */
+    .cabecalho_rodape {             /* cor e altura do cabeçalho e do rodapé*/
+        display: flex;              /* display*/
+        justify-content: center;    /* centraliza horizontalmente*/
+        align-items: center;        /* centraliza verticalmente */
+
+        background-color: #100E09;      /* cor de fundo*/
+        height: 100px;                    /* altura*/
     }
 
-    #cabecalho {    /* Cabeçalho*/
+
+
+    #cabecalho {            /* cabeçalho*/
         padding: 20px;
         text-align: center;
     }
 
-    #rodape {   /* Rodapé*/
-        /* Atualmente sem uso*/
+    #rodape {               /* rodapé*/
+        /* atualmente sem uso*/
     }
 
 
-    /* ===LAYOUT DE MENU E CONTEÚDO=== */
 
-    .grid {             /* Latout do menu e conteúdo*/
-        display: grid;  /* Tipo de display */
-        grid-template-columns: 200px auto;   /* Divisão das colunas ➡️ para criar o menu lateral e deixar o espaço para o conteúdo */
 
-        min-height: 80vh;                   /* Altura mínima ➡️ cresce se precisar*/
+
+    /* MENU E CONTEÚDO */
+    .menu_conteudo {
+        display: grid;                          /* display */
+        grid-template-columns: 200px auto;      /* divisão das colunas ➡️ para criar o menu lateral e deixar o espaço para o conteúdo */
+
+        min-height: 80vh;                       /* altura mínima ➡️ cresce se precisar*/
     }
     
 
 
-
-    /* ===MENU LATERAL=== */
-
-    #menu-lateral {     /* Menu lateral*/
-        display: flex;  /* Tipo de display*/
-        flex-direction: column; /* Direção dos elementos ➡️ um abaixo do outro*/
-        justify-content: left;  /* Alinha a esquerda*/
+    /* MENU LATERAL*/
+    #menu {
+        display: flex;          /* display*/
+        flex-direction: column; /* direção dos elementos ➡️ um abaixo do outro*/
+        justify-content: left;  /* alinha a esquerda*/
 
         
-        background-color: #292828;  /* Cor de fundo*/
+        background-color: #292828;  /* cor de fundo*/
 
-        padding-left: 10px; /* Espaço interno a esquerda*/
-        padding-top: 10px;  /* Espaço interno emcima*/
+        padding-left: 10px; /* espaço interno a esquerda*/
+        padding-top: 10px;  /* espaço interno emcima*/
     }
 
-    #menu-lateral h1 {          /* Título*/
-        align-self: flex-start; /* Para o elemento ocupar apenas o seu espaço*/
-        width: 90%;             /* Para não ocupar a linha toda*/ 
+    #menu h1 {                      /* título*/
+        align-self: flex-start;     /* para o elemento ocupar apenas o seu espaço*/
+        width: 90%;                 /* para não ocupar a linha toda*/ 
         
-        font-size: 15pt;        /* Tamanho do texto*/
-        font-weight: 1000;
+        font-size: 15pt;            /* tamanho do texto*/
+        font-weight: 1000;          /* texto mais gordo ➡ negrito*/
 
-        border-bottom: 1px solid white; /* Boda embaixo do texto*/
-        padding-bottom: 10px;   /* Espaço interno embaixo*/
+        border-bottom: 1px solid white;     /* boda embaixo do texto*/
+        padding-bottom: 10px;                 /* espaço interno embaixo*/
 
-        margin-top: 40px;       /* Para dar um espaço no topo*/
+        margin-top: 40px;                     /* para dar um espaço no topo*/
     }
 
-    #menu-lateral button {      /* Subtítulo*/
-        align-self: flex-start; /* Para o elemento ocupar apenas o seu espaço*/
+    #menu-lateral button {          /* botões*/
+        align-self: flex-start;     /* para o elemento ocupar apenas o seu espaço*/
 
-        font-size: 17pt;    /* Tamanho da fonte*/
-        padding-left: 30px; /* Espaço interno a esquerda*/
+        font-size: 17pt;            /* tamanho da fonte*/
+        padding-left: 30px;         /* espaço interno a esquerda*/
 
-        margin-bottom: 10px;    /* Para dar um espaço entre os links*/
+        margin-bottom: 10px;        /* para dar um espaço entre os botões*/
 
-        color: white;         /* Cor do texto*/
-        font-weight: 1000;      /* Negrito*/
+        color: white;             /* cor do texto*/
+        font-weight: 1000;          /* negrito*/
         
-        background-color: transparent;  /* Fundo transparente*/
-        border: none;                   /* Remove bordas*/
+        background-color: transparent;  /* fundo transparente*/
+        border: none;                   /* remove bordas*/
 
-        cursor: pointer;                /* Modifica o ponteiro do cursor*/
+        cursor: pointer;                /* modifica o ponteiro do cursor*/
 
     }
 
-    #menu-lateral a {           /* Links do menu lateral*/
-        text-decoration: none;  /* Pare remover o underline do link*/
-        color: white;        /* Cor do texto*/
-    }
 
 
-    /* ===CONTEÚDO=== */
-
+    /* CONTEÚDO */
     #conteudo {
-        background-color: #1c1c1c;  /* Cor de fundo*/
+        background-color: #1c1c1c;  /* cor de fundo*/
     }
 
         
@@ -130,11 +138,11 @@
 </head>
 <body>
 
-<div id="layout">
+<div id="pagina">
 
 
     <!-- CABEÇALHO -->
-    <div id="cabecalho" class="layout">
+    <div id="cabecalho" class="cabecalho_rodape">
         <h1>
             FELIPE GABRIEL ARAÚJO DE FREITAS <br>
             MATHEUS RAMOS LIMA DA SILVA <br>
@@ -144,10 +152,10 @@
 
 
 
-    <div class="grid">
+    <div class="menu_conteudo">
 
         <!-- MENU LATERAL -->
-        <div id="menu-lateral">
+        <div id="menu">
 
             <h1>PÁGINAS</h1> <br>
 
@@ -173,7 +181,7 @@
 
 
     <!-- RODAPÉ -->
-    <div id="rodape" class="layout">
+    <div id="rodape" class="cabecalho_rodape">
         <h1>2026</h1>
     </div>
 
