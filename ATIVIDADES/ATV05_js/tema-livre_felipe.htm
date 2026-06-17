@@ -4,107 +4,13 @@
 <!-- Paulo Lázaro da Rocha Souza -->
 
 
-<style>
-
-
-    /* !!! TEMPORÁRIO !!!*/
-    body, html, * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-
-        scrollbar-width: none;
-    }
-
-
-
-
-    /* !!! USO DE '#tema_livre' PARA ISOLAR O CSS E EVITAR CONFLITOS AO INJETAR MO OUTRO HTML !!! */
-
-
-    #tema_livre {
-        display: flex;                  /* display*/
-        flex-direction: column;         /* direção dos elementos*/
-        min-height: 100vh;              /* ocupar a tela toda*/
-        
-
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   /* fonte do texto*/
-        scrollbar-width: none;                                          /* deixa o scroll invisível*/
-
-        color: white;                                                 /* cor do texto*/
-        background-color: #1c1c1c;                                    /* cor de fundo */
-    }
-
-
-    
-
-
-    /* INFORMAÇÕES INICIAS */
-    #tema_livre #informacoes_iniciais {     /* pega a primeira seção da página */
-        display: flex;                      /* tipo de display*/
-        flex-direction: row;                /* para alinhar os elementos em uma linha*/
-        
-        width: 95%;                         /* largura*/
-        margin: auto;                       /* para centralizar*/
-        margin-top: 30px;                   /* para dar um espaço no topo*/
-        
-    }
-
-    #tema_livre #informacoes_iniciais p {
-        margin: auto;           /* para ajustar o alinhamento do texto*/
-
-        width: 70%;             /* para reduzir a largura e deixar o texto "empilhado"*/
-        text-align: justify;    /* para deixar o texto justificado*/
-
-    }
-
-
-
-
-    /* MÚSICA*/
-    #tema_livre #musica {               /* seção com a letra da música*/
-        margin-top: 100px;              /* para dar um espaço*/
-    }
-
-
-    #tema_livre #musica h2, #tema_livre #musica a {                          /* título da seção*/
-        background-color: #100E09;                                         /* cor de fundo*/
-        color: inherit;                                                      /* cor do texto/link*/
-
-        text-align: center;                                                /* alinhamento do texto*/
-        width: auto;                                                       /* largura*/
-        padding: 15px;                                                     /* espaço interno*/
-    }
-
-
-
-    /* LETRA */
-    #tema_livre .letra {                        /* letra da música*/
-        display: grid;                          /* display*/
-        grid-template-columns: auto auto;       /* cria duas tabelas de mesmo tamanho*/
-
-        justify-content: center;                /* alinhamento horizontal*/
-        align-content: center;                  /* alinhamento vertical*/
-        gap: 100px;                             /* espaço entre os elementos*/
-
-        min-height: 100vh;                      /* ocupar a tela inteira*/
-    }
-
-    #tema_livre .letra p {
-        background-color: rgba(0, 0, 0, 0.29);
-
-        padding: 20px;
-        border-radius: 20px;
-    }
-
-
-</style>
+<link rel="stylesheet" href="./css/style.css">
 
  
-<div id="tema_livre">
+<div id="pagina">
 
     <!-- INFORMAÇÕES INCIAIS -->
-    <div id="informacoes_iniciais">
+    <div id="informacoes_iniciais-felipe">
 
         <img title="foto player tauz" src="./img/tauz.png"alt="foto do player tauz" width="auto" height="200px">
 
@@ -120,12 +26,12 @@
     <!-- MÚSICA     -->
     <div id="musica">
 
-        <h2>
+        <h2 id="titulo">
             <a title="Rap do Minecraft" href="https://youtu.be/LVMHYzVS9Y4" target="_blank">RAP DO MINECRAFT</a>
         </h2>
 
         <!-- LETRA -->
-        <div class="letra">
+        <div id="letra">
         
             <p>
             Bem-vindo ao Minecraft, meu amigo <br>

@@ -11,150 +11,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/trio_devs_favicon.ico" type="image/x-icon">
-    
+    <link rel="stylesheet" href="./css/style.css">
     <title>TRIO DEVS</title>
     
     
-<style>
-
-
-
-    * {                             /* para zerar a estilização do navegador*/
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-
-
-        scrollbar-width: none;      /* scroll invisível*/
-    }
-
-
-    body, html {
-        background-color: #2f3030;      /* cor de fundo*/
-    }
-
-
-    /* PÁGINA */
-    #pagina {     
-        display: flex;          /* display*/
-        flex-direction: column; /* direção dos elementos ➡️ em coluna (um abaixo do outro)*/
-        
-        margin: 30px auto;      /* margens da tabela ➡ 30px top e bottom e auto para right e left*/
-        
-        width: 95%;             /* largura*/
-
-        color: white;         /* cor do texto*/
-    }
-
-
-
-
-    /* CABEÇALHO E RODAPÉ */
-    #pagina .cabecalho_rodape {             /* cor e altura do cabeçalho e do rodapé*/
-        display: flex;              /* display*/
-        justify-content: center;    /* centraliza horizontalmente*/
-        align-items: center;        /* centraliza verticalmente */
-
-        background-color: #100E09;      /* cor de fundo*/
-        height: 100px;                    /* altura*/
-    }
-
-
-
-    #pagina #cabecalho {            /* cabeçalho*/
-        /* sem uso*/
-    }
-
-    #pagina #rodape {               /* rodapé*/
-        /* atualmente sem uso*/
-    }
-
-
-
-
-
-    /* MENU E CONTEÚDO */
-    #pagina .menu_conteudo {
-        display: grid;                          /* display */
-        grid-template-columns: 200px auto;      /* divisão das colunas ➡️ para criar o menu lateral e deixar o espaço para o conteúdo */
-
-        min-height: 80vh;                       /* altura mínima ➡️ cresce se precisar*/
-    }
-    
-
-
-    /* MENU LATERAL*/
-    #pagina #menu {
-        display: flex;          /* display*/
-        flex-direction: column; /* direção dos elementos ➡️ um abaixo do outro*/
-        justify-content: left;  /* alinha a esquerda*/
-
-        
-        background-color: #292828;  /* cor de fundo*/
-
-        padding-left: 20px;           /* espaço interno a esquerda*/
-        padding-top: 30px;            /* espaço interno em cima*/
-    }
-
-
-    #menu h1 {                      /* títulos*/
-        align-self: flex-start;     /* para o elemento ocupar apenas o seu espaço*/
-        width: 90%;                 /* para não ocupar a linha toda*/ 
-        
-        font-size: 20pt;            /* tamanho do texto*/
-        font-weight: bold;          /* texto mais gordo ➡ negrito*/
-
-        border-bottom: 3px solid white;     /* boda embaixo do texto*/
-        padding-bottom: 5px;                 /* espaço interno embaixo*/
-
-        margin-top: 20px;                     /* para dar um espaço no topo*/
-    }    
-
-
-
-    #pagina #menu button {          /* botões*/
-        align-self: flex-start;     /* para o elemento ocupar apenas o seu espaço*/
-
-        font-size: 17pt;            /* tamanho da fonte*/
-
-        margin-bottom: 10px;        /* para dar um espaço entre os botões*/
-
-        color: white;             /* cor do texto*/
-        font-weight: bold;          /* negrito*/
-        
-        background-color: transparent;  /* fundo transparente*/
-        border: none;                   /* remove bordas*/
-
-        cursor: pointer;                /* modifica o ponteiro do cursor*/
-
-    }
-
-
-
-    /* CONTEÚDO */
-    #pagina #conteudo {
-        background-color: #1c1c1c;      /* cor de fundo*/
-    }
-
-
-    /* CAPA */
-    #pagina #capa {
-        text-align: center;             /* centralizar*/
-        background-color: #010c16;    /* cor de fundo*/
-        height: 100vh;                  /* ocupar toda a altura*/
-    }
-        
-
-</style>
-
 </head>
 <body>
 
-<div id="pagina">
+<div id="pagina" style="width: 95%;">
 
 
     <!-- CABEÇALHO -->
-    <div id="cabecalho" class="cabecalho_rodape">
+    <div id="cabecalho" class="cabecalho-rodape">
 
         <h1 id="titulo_cabecalho">TRIO DEVS</h1>
         
@@ -162,7 +30,7 @@
 
 
 
-    <div class="menu_conteudo">
+    <div id="menu-conteudo">
 
         <!-- MENU LATERAL -->
         <div id="menu">
@@ -220,7 +88,7 @@
 
 
     <!-- RODAPÉ -->
-    <div id="rodape" class="cabecalho_rodape">
+    <div id="rodape" class="cabecalho-rodape">
         <h1>2026</h1>
     </div>
 
