@@ -1,105 +1,52 @@
-<!-- ALUNOS - 523 -->
-<!-- Felipe Gabriel Araújo de Freitas -->
-<!-- Matheus Ramos Lima da Silva -->
-<!-- Paulo Lázaro da Rocha Souza -->
-
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo Matheus</title>
-    <link rel="icon" type="image/x-icon" href="img/fotocurriculo.png">
-</head>
-
-<body>
+<link rel="stylesheet" href="./css/style.css">
 
 
-<style>
+<div id="pagina">
 
-    body {
-        margin: 0; /*Tira as margens*/
-        background-color: #ffffff; /*Adiciona cor ao fundo*/
-    }
+    <div id="informacoes_iniciais">
+        <img title="foto curriculo" src="./img/foto-curriculo-matheus.png" alt="foto do L">
 
-    table {
-        width: 100%; /*Largura da tabela*/
-         /*Tira as margens*/
-        border-color:#ffffff
-    }
+        <p>
+        Sou brasileiro e sou obcecado por tecnologia. Estou cursando o Curso Técnico Integrado de Ciência da Computação do Ensino Médio do Instituto Federal. Tenho conhecimento de Infraestrutura de Redes, Sistemas Operacionais, Programação e Montagem de Computadores.
+        </p>
+        
+    </div>
 
-    /* Meche na tabela e nas células */
-    table, td, th{
-         /*Tira as margens*/
-        border: 1px solid; /*Adiciona bordas de 1 pixel no estilo solido*/
-        border-color: none; /*Adiciona a cor na borda*/
-        border-collapse: collapse; /*Comprartilha a borda*/
-    }
 
-    /* Meche nas células que não são de cabeçalho */
-    td {
-        text-align: center; /*Alinha o texto no centro*/
-        color: rgb(0, 19, 128); /*Adiciona cor*/
-    }
-    
-    /* Meche nos dois tipos de células */
-    th, td {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*Adiciona estilo da fonte. Obs: Nativo, não foi importado.*/ 
-    }
+    <div id="tabela-formacoes">
+        <table style="width: 100%; border-collapse: collapse; height: 58vh; ">
 
-    /* Meche na tabela de cabeçalho */
-    th {
-        font-size: 14pt; /*Tamanho da fonte*/
-        color: white; /*Adiciona a cor*/
-        background-color:  rgb(8, 67, 194); /*Adiciona cor ao fundo*/
-    }
+            <tr id="titulo-matheus" class="titulo">
+                <th colspan="5" style="padding-top: 3%; padding-bottom: 3%;">Habilidades</th>
+            </tr>
 
-</style>
+            <tr class="linha-impar bordas-separador">
+                <th class="titulo-habilidades">Linguagens</th>
+                <td class="bordas-separador">Python</td>
+                <td class="bordas-separador">JavaScript</td>
+                <td class="bordas-separador">CSS</td>
+                <td class="bordas-separador">HTML</td>
+            </tr>
 
-<table style="border-collapse: collapse; " >
-    <tr>
-        <td style="padding: 0; border-color: white">
-            <img src="img/fotocurriculo.png" alt="fotocurricular" width="200" height="100%" title="fotocurriculo">
-        </td>
-        <td colspan="4" style="padding: 0; border-color: white">
-            <h2 style="text-align: left; padding-left: 2%;color: rgb(0, 81, 254);">Matheus Ramos Lima da Silva</h2>
+            <tr class="linha-par bordas-separador">
+                <th class="titulo-habilidades">Sistemas</th>
+                <td class="bordas-separador">Windows</td>
+                <td class="bordas-separador">Ubuntu</td>
+                <td class="bordas-separador">Kali Linux</td>
+                <td class="bordas-separador">Fedora</td>
+            </tr>
 
-            <p style="text-align: justify; padding-left: 2%; padding-right: 2%; font-size: 14pt; font-weight: 500; color: rgb(0, 81, 254);">
-                Sou brasileiro e sou obcecado por tecnologia. Estou cursando o Curso Técnico Integrado de Ciência da Computação do Ensino Médio do Instituto Federal. Tenho conhecimento de Infraestrutura de Redes, Sistemas Operacionais, Programação e Montagem de Computadores.
-            </p>
-        </td>
-    </tr>
-</table>
+            <tr class="linha-impar bordas-separador"
+            style="border-bottom: 1px solid white;">
+                <th class="titulo-habilidades bordas-separador">Tools</th>
+                <td class="bordas-separador">GitHub</td>
+                <td class="bordas-separador">Git</td>
+                <td class="bordas-separador">Matplotlib</td>
+                <td class="bordas-separador">Numpy</td>
+            </tr>
+        </table>        
 
-<table style="width: 100%; border-collapse: collapse; height: 58vh; ">
-    <tr>
-        <th colspan="5" style="padding-top: 3%; padding-bottom: 3%;">Habilidades</th>
-    </tr>
+    </div>
 
-    <tr>
-        <th style="padding: 2%;">Linguagens</th>
-        <td>Python</td>
-        <td>JavaScript</td>
-        <td>CSS</td>
-        <td>HTML</td>
-    </tr>
 
-    <tr>
-        <th style="padding: 2%;">Sistemas</th>
-        <td>Windows</td>
-        <td>Ubuntu</td>
-        <td>Kali Linux</td>
-        <td>Fedora</td>
-    </tr>
-
-    <tr>
-        <th style="padding: 2%;">Tools</th>
-        <td>GitHub</td>
-        <td>Git</td>
-        <td>Matplotlib</td>
-        <td>Numpy</td>
-    </tr>
-</table>
-
-</body>
-</html>
+</div>

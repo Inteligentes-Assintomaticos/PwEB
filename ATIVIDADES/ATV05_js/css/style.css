@@ -148,17 +148,16 @@ body, html {
 } */
 
 /* informações iniciais */
-#informacoes_iniciais-felipe {
+#informacoes_iniciais {
     display: flex;
     flex-direction: row;
     
     width: 95%;
     margin: auto;
     margin-top: 30px;
-
 }
 
-#informacoes_iniciais-felipe p {
+#informacoes_iniciais p {
     margin: auto;
     width: 75%;
     text-align: justify;
@@ -166,7 +165,7 @@ body, html {
 
 
 /* tabela */
-#tabela-formacoes-felipe {
+#tabela-formacoes {
     color: inherit;       /* herda a cor do container pai*/
 
     border-collapse: collapse;
@@ -179,14 +178,14 @@ body, html {
 }
 
 
-#tabela-formacoes-felipe #titulo {
+#tabela-formacoes .titulo {
     background-color:  #100E09;
     border-bottom: 1px solid white;
     height: 50px;
 }
 
 
-#tabela-formacoes-felipe tr {
+#tabela-formacoes tr {
     text-align: center;
     vertical-align: middle;     /* alinhamento vertical*/
 }
@@ -253,7 +252,19 @@ body, html {
 
 /*---------------------------------------*/
 
-/* CURRÍCULO-MATHEUS */
+/* CURRÍCULO-MATHEUS*/
+
+#tabela-formacoes .titulo-habilidades {
+    padding: 2%;
+}
+
+#tabela-formacoes #titulo-matheus {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+
+/* TEMA_LIVRE-MATHEUS */
 
 .secoes img {
     width: auto;
