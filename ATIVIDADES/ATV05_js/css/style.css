@@ -247,7 +247,35 @@ body, html {
 
 /*---------------------------------------*/
 
-/* curriculo-matheus */
+/* CURRÍCULO-MATHEUS */
+
+.secoes img {
+    width: auto;
+    height: 400px;
+}
+
+.secoes .img {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.titulos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(97, 39, 0);
+}
+
+.textos {
+    border-bottom: 1px solid rgb(97, 39, 0);
+
+    text-align: justify;
+
+    padding: 10px;
+}
+
+
 
 
 
