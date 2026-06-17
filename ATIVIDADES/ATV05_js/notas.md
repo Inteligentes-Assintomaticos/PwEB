@@ -3,4 +3,3 @@
 - comentários
 - mínimo de 4 classes 
 - <noscript>
-- DOCTYPE
