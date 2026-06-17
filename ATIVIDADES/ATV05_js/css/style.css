@@ -22,6 +22,9 @@ body, html {
     color: white;
 }
 
+a {
+    color: white;
+}
 
 
 
@@ -37,6 +40,7 @@ body, html {
     margin: 30px auto;          /* 30px cima/baixo e auto direita/esquerda*/
     
     background-color: #1c1c1c;
+
 }
 
 /*---------------------------------------*/
@@ -263,28 +267,29 @@ body, html {
     padding-bottom: 3%;
 }
 
+/*---------------------------------------*/
 
 /* TEMA_LIVRE-MATHEUS */
 
-.secoes img {
+.secoes-matheus img {
     width: auto;
     height: 400px;
 }
 
-.secoes .img {
+.secoes-matheus .img {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.titulos {
+.secoes-matheus .titulos {
     display: flex;
     flex-direction: row;
     justify-content: center;
     background-color: rgb(97, 39, 0);
 }
 
-.textos {
+.secoes-matheus .texto {
     border-bottom: 1px solid rgb(97, 39, 0);
 
     text-align: justify;
@@ -293,30 +298,45 @@ body, html {
 }
 
 
+/*---------------------------------------*/
+
+/* CURRÍCULO-PAULO */
+
+.secoes-paulo .titulo {
+    border-bottom: 2.5px solid white;
+    padding-bottom: 8px;
+}
+
+.secoes-paulo .texto {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 
+#secao-tabela-paulo {
+    display: flex;
+    flex-direction: column;
+    
+    border: 1px solid white;
+    padding: 20px;
+}
+
+#tabela-paulo {
+    margin-top: 20px;
+    text-align: center;
+    
+    border: 1px solid white;
+    border-collapse: collapse;
+}
 
 /*---------------------------------------*/
 
-/* curriculo-paulo */
-
-
-/*---------------------------------------*/
+/* TEMA_LIVRE-PAULO*/
 
 
 
 
-/* tema_livre-felipe*/
 
-
-/*---------------------------------------*/
-
-/* tema_livre-matheus*/
-
-
-/*---------------------------------------*/
-
-/* tema_livre-paulo*/
 
 
 /*---------------------------------------*/
