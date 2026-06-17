@@ -24,7 +24,7 @@
     <!-- CABEÇALHO -->
     <div id="cabecalho" class="cabecalho-rodape">
 
-        <h1 id="titulo_cabecalho">TRIO DEVS</h1>
+        <h1 id="titulo-cabecalho">TRIO DEVS</h1>
         
     </div>
 
@@ -38,18 +38,18 @@
             <button onclick="voltar_capa()">INÍCIO</button>
 
             <h1>FELIPE</h1> <br>
-            <button onclick="conteudo_fuction('curriculo_felipe.htm', 'FELIPE')">Currículo</button>
-            <button onclick="conteudo_fuction('tema-livre_felipe.htm', 'FELIPE')">Player Tauz</button>
+            <button onclick="conteudo_fuction('curriculo-felipe.htm', 'FELIPE')">Currículo</button>
+            <button onclick="conteudo_fuction('tema_livre-felipe.htm', 'FELIPE')">Player Tauz</button>
 
 
             <h1>MATHEUS</h1> <br>
-            <button onclick="conteudo_fuction('curriculo_matheus.htm', 'MATHEUS')">Currículo</button>
-            <button onclick="conteudo_fuction('tema-livre_matheus.htm','MATHEUS')">tema livre</button>
+            <button onclick="conteudo_fuction('curriculo-matheus.htm', 'MATHEUS')">Currículo</button>
+            <button onclick="conteudo_fuction('tema_livre-matheus.htm','MATHEUS')">tema livre</button>
 
 
             <h1>PAULO</h1> <br>
-            <button onclick="conteudo_fuction('curriculo_paulo.htm', 'PAULO')">Currículo</button>
-            <button onclick="conteudo_fuction('tema-livre_paulo.htm', 'PAULO')">tema livre</button>
+            <button onclick="conteudo_fuction('curriculo-paulo.htm', 'PAULO')">Currículo</button>
+            <button onclick="conteudo_fuction('tema_livre-paulo.htm', 'PAULO')">tema livre</button>
         
         </div>
         
@@ -70,7 +70,7 @@
             // função para mudar o conteúdo
             async function conteudo_fuction(arquivo, nome) {
                 document.getElementById('conteudo').innerHTML = await (await fetch(arquivo)).text()
-                document.getElementById('titulo_cabecalho').innerHTML = nome
+                document.getElementById('titulo-cabecalho').innerHTML = nome
             }
 
 
@@ -79,7 +79,7 @@
 
             function voltar_capa() {
                 document.getElementById('conteudo').innerHTML = capa
-                document.getElementById('titulo_cabecalho').innerHTML = 'TRIO DEVS'
+                document.getElementById('titulo-cabecalho').innerHTML = 'TRIO DEVS'
             }
 
         </script>
