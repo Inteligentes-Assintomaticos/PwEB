@@ -76,8 +76,8 @@
 
             // função para mudar o conteúdo
             async function conteudo_fuction(arquivo, nome) {
-                document.getElementById('conteudo').innerHTML = await (await fetch(arquivo)).text()
-                document.getElementById('titulo-cabecalho').innerHTML = nome
+                document.getElementById('conteudo').innerHTML = await (await fetch(arquivo)).text()         // para puxar o arquivo no servidor, esperar e converter em texto
+                document.getElementById('titulo-cabecalho').innerHTML = nome                                // para mudar o título
             }
 
 
@@ -85,8 +85,8 @@
             const capa = document.getElementById('conteudo').innerHTML      // armazena
 
             function voltar_capa() {
-                document.getElementById('conteudo').innerHTML = capa
-                document.getElementById('titulo-cabecalho').innerHTML = 'TRIO DEVS'
+                document.getElementById('conteudo').innerHTML = capa                  // escreve o conteúdo armazenado
+                document.getElementById('titulo-cabecalho').innerHTML = 'TRIO DEVS'   // muda o título tamb´me
             }
 
         </script>
